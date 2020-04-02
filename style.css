@@ -15,6 +15,7 @@
                       /*Global*/
 body {
     padding: 0px;
+    font-family: 'Poppins', sans-serif;
     margin: 0px;
     box-sizing: border-box;
     cursor: default;
@@ -30,8 +31,8 @@ body p{
 
 .body_section{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 199, 199,1);
+/*    height: 100vh;*/
+/*    background-color: rgb(255, 199, 199,1);*/
     flex-direction: column;
 }
 
@@ -53,30 +54,38 @@ body p{
     align-items: center;
 }
 .heading p{
+    font-family: 'Staatliches', sans-serif;
     margin: 0px;
     padding: 0px;
+    letter-spacing: 1px;
     color: white;
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 
 .main {
     display: flex;
     width: 100%;
     background-color: #f5f5f5;
-    height: 700px;
 }
 
 .projects_cont{
     width: 100%;
+    margin-top: 30px;
 }
-.projects_cont ul{
+.projects_cont ol{
+    margin: 0px;
+    padding: 0px;
     display: flex;
     width: 100%;
     flex-direction: column;
 }
+
 .item{
-    height: 30px;
     display: flex;
+    padding-left: 20px;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     justify-content: center;
 }
 .projects_cont li{
@@ -85,10 +94,11 @@ body p{
     flex-direction: column;
 }
 .projects_cont li a{
+    font-family: 'Poppins', sans-serif;
     font-size: 1.3em;
     color: #000;
     text-decoration: none;
-   margin: 0px;
+    margin: 0px;
     padding: 0px;
 }
 
