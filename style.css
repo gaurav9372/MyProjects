@@ -2,6 +2,7 @@
 
 *::after,
 *::before{
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -17,6 +18,7 @@ body {
     padding: 0px;
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     cursor: default;
     font-family: sans-serif;
@@ -33,6 +35,9 @@ body p{
     width: 100%;
 /*    height: 100vh;*/
 /*    background-color: rgb(255, 199, 199,1);*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -40,8 +45,12 @@ body p{
 .header{
     width: 100%;
 /*    padding-left: 30px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 /*    justify-content: center;*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 70px;
     background-color: #83204a;
@@ -49,10 +58,23 @@ body p{
 .heading{
     width: 200px;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
+.header a{
+    text-decoration: none;
+}
+.header a:hover{
+    text-decoration: none;
+}
+
 .heading p{
     font-family: 'Staatliches', sans-serif;
     margin: 0px;
@@ -63,6 +85,8 @@ body p{
 }
 
 .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     background-color: #f5f5f5;
@@ -75,22 +99,36 @@ body p{
 .projects_cont ol{
     margin: 0px;
     padding: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 20px;
     width: 100%;
     height: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .projects_cont li{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 .projects_cont li a{
