@@ -1,170 +1,132 @@
-                    /*Resetting*/
-
-*::after,
-*::before{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-
-*{
-/*   box-shadow: 0px 0px 0px 1px #999999;*/
-/*   border-radius: 3px;*/
-}
-
-                      /*Global*/
 body {
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
     margin: 0px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    cursor: default;
     font-family: sans-serif;
-}
-
-body p{
-    margin: 0px;
-    padding: 0px;
-}
-
-/*custom*/
-
-.body_section{
     width: 100%;
-/*    height: 100vh;*/
-/*    background-color: rgb(255, 199, 199,1);*/
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    display: flex;
     flex-direction: column;
 }
 
-
-.header{
-    width: 100%;
-/*    padding-left: 30px;*/
-    display: -webkit-box;
-    display: -ms-flexbox;
+.nav_bar{
     display: flex;
-/*    justify-content: center;*/
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     height: 70px;
+    width: 100%;
+    align-items: center;
     background-color: #83204a;
+    padding-left: 30px;
+    box-sizing: border-box;
 }
 .heading{
-    width: 200px;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-}
-.header a{
     text-decoration: none;
 }
-.header a:hover{
-    text-decoration: none;
-}
-
-.heading p{
+.heading h2{
     font-family: 'Staatliches', sans-serif;
     margin: 0px;
     padding: 0px;
     letter-spacing: 1px;
     color: white;
-    font-size: 1.7em;
 }
 
-.main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    background-color: #f5f5f5;
-}
 
-.projects_cont{
+main{
     width: 100%;
-    margin-top: 30px;
 }
-.projects_cont ol{
-    margin: 0px;
-    padding: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.cont{
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
 }
 
 .item{
-    display: -webkit-box;
-    display: -ms-flexbox;
+    box-sizing: border-box;
     display: flex;
-    padding-left: 20px;
+    padding: 0px 30px;
     width: 100%;
     height: 60px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    background:linear-gradient(#fff,98%, rgba(0,0,0,0.2)); 
+    justify-content: space-between;
+    align-items: center;
 }
-.projects_cont li{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+
+.cont a{
+    text-decoration: none;
 }
-.projects_cont li a{
+.item p{
     font-family: 'Poppins', sans-serif;
     font-size: 1.3em;
     color: #000;
-    text-decoration: none;
     margin: 0px;
     padding: 0px;
 }
-
-.projects_cont li a:hover{
+.item:hover p{
     color:crimson;
+}
+
+.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+/*    background-color: red;*/
+    transition: 300ms;
 }
 
 
 
+.more img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Accordion*/
+
+#css_accord{
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+/*    background-color: red;*/
+    transition: 700ms;
+}
+
+#javascript_accord{
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+/*    background-color: red;*/
+    transition: 700ms;
+}
 
 
+.child_item{
+    box-sizing: border-box;
+    display: flex;
+    padding: 0px 50px;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.1);
+    align-items: center;
+}
 
+.child_item p{
+    color:#000;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+}
 
-
-
-
-
-
-
-
-
-
+.child_item:hover p{
+    color: crimson;
+}
 
 
 
 
 @media all and (min-width: 600px){
-
 }
 
 /*Desktop*/
