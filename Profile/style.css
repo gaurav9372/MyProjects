@@ -1,0 +1,110 @@
+body,p,h2{
+    margin:0px;
+    padding:0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:fixed;
+    height:60px;
+    background-color:white;
+    width:100%;
+    top:0px;
+    box-shadow:0px 0px 13px 0px rgba(0,0,0,0.3);
+    z-index: 999;
+    justify-content: space-between;
+}
+
+#logo{
+    position: relative;
+    display: flex;
+    color: black;
+    width: 120px;
+    height: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    color: #F15454;
+    font-size: 2em;
+    font-family: lobster,sans-serif;
+    letter-spacing: 4px;
+}
+
+#menu{
+    display: flex;
+    padding: 18px;
+    width: 65px;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.bar{
+    width: 100%;
+    background-color: #F15454;
+    height: 2px;
+}
+
+#cover{
+    position: relative;
+    display: flex;
+    
+    margin-top:60px;
+    width:100%;
+    height:410px;
+    
+    background: url("images/cover.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+#caption{
+    
+    width: 8em;
+    
+    margin-left: 30px;
+    margin-top: 150px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-family: Allan,cursive;
+    line-height: 100%;
+    font-size: 1.5em;
+    
+/*    letter-spacing: 0.05em;*/
+    color: #323232;
+    
+/*    border:1px solid green;*/
+}
+
+#heading {
+    
+    width: 4.8em;
+/*    border:1px solid green;*/
+    
+    
+    margin-left: 30px;
+    margin-top: 10px;
+
+    font-family: Bebas Neue, Roboto, sans-serif;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5em;
+    line-height: 100%;
+
+    letter-spacing: 0.05em;
+    color: #F15454;
+}
+
