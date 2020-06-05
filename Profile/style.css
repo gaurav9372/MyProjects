@@ -13,7 +13,7 @@ body,p,h2{
     align-items: center;
     justify-content: center;
     position:fixed;
-    height:80px;
+    height:70px;
     width:100%;
     padding: 10px;
     background-color: transparent;
@@ -51,7 +51,7 @@ body,p,h2{
 #menu{
     display: flex;
     padding: 1em;
-    width: 70px;
+    width: 65px;
     height: 100%;
     justify-content: space-between;
     flex-direction: column;
@@ -60,7 +60,7 @@ body,p,h2{
 .bar{
     width: 100%;
     background-color: #F15454;
-    height: 3px;
+    height: 2px;
 }
 
 #cover{
