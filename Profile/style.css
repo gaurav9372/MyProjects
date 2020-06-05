@@ -223,7 +223,7 @@ font-size: 1.5em;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #fff;
     width: 100%;
     height: 400px;
@@ -274,7 +274,7 @@ font-size: 1.5em;
 }
 
 .imgRight p{
-    bottom: 90px;
+/*    bottom: 90px;*/
     left: 100px;
     position: absolute;
     color: #fff;
@@ -282,7 +282,7 @@ font-size: 1.5em;
     font-family: 'Allan',cursive;
 }
 .imgLeft p{
-    top: 90px;
+/*    top: 90px;*/
     right: 85px;
     position: absolute;
     color: #fff;
