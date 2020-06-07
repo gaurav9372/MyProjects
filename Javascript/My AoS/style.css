@@ -1,0 +1,61 @@
+body{
+    font-family: 'Lato',sans-serif;
+}
+
+body,p{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.content{
+    height: 1040px;
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 280px;
+    background-color: crimson;
+    height: 100px;
+}
+
+.cont p{
+    color: #fff;
+    font-size: 2em;
+}
+
+#hello{
+    opacity: 0;
+    animation: null;
+}
+
+#offset{
+    position: fixed;
+    top:30px;
+    color: #fff;
+}
+
+@keyframes move{
+    from{
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+
+
+
+
+
+
+
+

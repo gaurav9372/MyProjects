@@ -13,3 +13,10 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+//
+//if(window.pageYOffset >= 380){
+//        welcome.style.opacity = "1";
+//        welcome.style.animation = "500ms move linear";
+//        
+//    } 
