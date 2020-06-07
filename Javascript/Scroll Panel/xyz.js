@@ -22,8 +22,8 @@ function measure(){
     text1.textContent= document.documentElement.scrollHeight;
     text2.textContent= document.documentElement.clientHeight;
     text3.textContent= window.pageXOffset;
-    text4.textContent= window.pageYOffset;
-    text5.textContent= document.documentElement.scrollTop;
+    text4.textContent= window.pageYOffset.toPrecision(4);
+    text5.textContent= document.documentElement.scrollTop.toPrecision(4);
     
     text6.textContent= cal_Height;
     
