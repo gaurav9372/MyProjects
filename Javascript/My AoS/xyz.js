@@ -9,7 +9,7 @@ function measure(){
     
     var offset = document.getElementById("aos_offset");
     
-    offset.innerHTML = window.pageYOffset;
+    offset.innerHTML = window.pageYOffset.toPrecision(4);
 
     
 if(window.pageYOffset >= 300){
