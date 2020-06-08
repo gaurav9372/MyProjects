@@ -259,7 +259,7 @@ font-size: 1.4em;
     height: 280px;
     position: absolute;
     overflow: hidden; 
-}
+} 
 
 .clipperLeft{
     left: 0px;
@@ -307,4 +307,19 @@ font-size: 1.4em;
     color: #fff;
     font-size: 1.7em;
     font-family: 'Allan',cursive;
+}
+
+.offsetCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    top:70px;
+    left:10px;
+    z-index: 999;
+    color: #fff;
 }

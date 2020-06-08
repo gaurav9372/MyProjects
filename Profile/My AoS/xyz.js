@@ -7,7 +7,7 @@ var welcome = document.getElementById("hello");
 function measure(){
     
     
-    var offset = document.getElementById("aos_offset");
+    var offset = document.getElementById("offset");
     
     offset.innerHTML = window.pageYOffset;
 

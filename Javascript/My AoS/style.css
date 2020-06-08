@@ -39,11 +39,72 @@ body,p{
     animation: null;
 }
 
-#offset{
+
+.aos_main_cont{
     position: fixed;
-    top:30px;
+    top: 0px;
+    left: 10px;
+    height: 100vh;
+    max-height: 100vh;
+    width: 60px;
+    background: rgba(180,42,13,0.8);
+    z-index: 999999;
+}
+.aos_range{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between
+}
+.aos_range_values{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.aos_range_value{
+    color: #fff;
+    letter-spacing: 1px;
+}
+.aos_range_marks{
+    height: 100%;
+    width: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #000;
+}
+.aos_range_mark{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.aos_offset_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(180,42,13,0.8);
+    padding: 5px;
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    right:-60px;
+    top: 30px;
     color: #fff;
 }
+
+
+#aos_offset{
+    
+}
+
+
 
 @keyframes move{
     from{
@@ -54,6 +115,9 @@ body,p{
 
 
 
+    
+    .aos_mark {}
+    .mark_25{}
 
 
 
