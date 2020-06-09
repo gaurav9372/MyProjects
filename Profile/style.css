@@ -15,11 +15,12 @@ body,p,h2{
     position:fixed;
     height:70px;
     width:100%;
-    padding: 10px;
+    padding: 10px 10px 0px;
     background-color: transparent;
+/*    background-color: red;*/
     top:0px;
     z-index: 999;
-    
+    animation: null;
 }
 
 #navInner{
@@ -32,6 +33,7 @@ body,p,h2{
     height: 100%;
     justify-content: space-between;
     overflow: hidden;
+    animation: null;
 }
 
 #logo{
@@ -39,22 +41,52 @@ body,p,h2{
     display: flex;
     width: 130px;
     height: 100%;
-    background-color: #fff;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     color: #F15454;
     font-size: 1.4em;
     font-family: 'Pacifico', cursive;
     letter-spacing: 4px;
+    animation: logo 300ms linear forwards;
 }
 
+@keyframes navbarExpand{
+    100%{
+        padding: 0px 0px 0px; 
+    }
+}
+
+@keyframes navInner{
+    100%{
+        border-radius: 0px; 
+    }
+}
+@keyframes navbarCollapse{
+    100%{
+        padding: 10px 10px 0px; 
+    }
+}
+
+@keyframes navInner{
+    100%{
+        border-radius: 0px; 
+    }
+}
+
+
+
+
+
 #menu{
+    
     display: flex;
     padding: 1em;
     width: 65px;
-    height: 100%;
+    height: 55px;
     justify-content: space-between;
     flex-direction: column;
+/*    border:1px solid red;*/
 }
 
 .bar{
