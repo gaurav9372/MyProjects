@@ -10,9 +10,11 @@ function polymove(){
     
 var offset = document.getElementById("aos_offset");
 
-offset.innerHTML = window.pageYOffset.toPrecision(4);
-
-if(window.pageYOffset >= 820){
+var scrolled = document.body.scrollTop || document.documentElement.scrollTop ;
+    
+offset.innerHTML = scrolled.toPrecision(4);
+    
+if(scrolled >= 820){
         leftPoly.style.animation = "moveUP 300ms ease-in forwards";
         rightPoly.style.animation = "moveDOWN 300ms ease-in forwards";
     } 
