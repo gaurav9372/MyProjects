@@ -14,7 +14,7 @@ var scrolled = document.body.scrollTop || document.documentElement.scrollTop ;
     
 offset.innerHTML = scrolled.toPrecision(4);
     
-if(scrolled >= 820){
+if(scrolled >= 700){
         leftPoly.style.animation = "moveUP 300ms ease-in forwards";
         rightPoly.style.animation = "moveDOWN 300ms ease-in forwards";
     } 
