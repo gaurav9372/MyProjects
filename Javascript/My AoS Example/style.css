@@ -38,7 +38,7 @@ body,p{
     opacity: 0;
     animation: null;
 }
- 
+
 
 .aos_main_cont{
     position: fixed;
@@ -98,8 +98,6 @@ body,p{
     top: 30px;
     color: #fff;
 }
-
-
 
 
 @keyframes moveUP{
