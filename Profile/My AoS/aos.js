@@ -32,7 +32,7 @@ if(scrolled > 0){
 else{
     navbar.style.padding = "10px 10px 0px";
     navInner.style.borderRadius = "5px";
-    navInner.style.boxShadow = "0px 0px 8px 0px rgba(0,0,0,0.8)"
+    navInner.style.boxShadow = "0px 0px 10px 0px rgba(0,0,0,0.7)"
     };
 }
  
