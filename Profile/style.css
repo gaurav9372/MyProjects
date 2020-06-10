@@ -86,10 +86,10 @@ body,p,h2{
     
 }
 
-
 #caption{
-    
-    width: 8em;
+    display: flex;
+    flex-direction: column;
+    width: 10em;
     
     margin-left: 30px;
     margin-top: 170px;
@@ -97,19 +97,53 @@ body,p,h2{
     font-style: normal;
     font-weight: normal;
     font-family: 'Allan', cursive;
-    line-height: 100%;
-    font-size: 1.4em;
-letter-spacing: 0.05em;
-/*    letter-spacing: 0.05em;*/
+    line-height: 1.4em;
+    font-size: 1.7em;
+    letter-spacing: 0.05em;
     color: #323232;
-    
 /*    border:1px solid green;*/
 }
 
+.line{
+    display: flex;
+    height: 1.4em;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.textblock{
+/*    border:1px solid red;*/
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    padding: 0px 8px;
+}
+
+.textblock p{
+    font-family: 'Allan', cursive;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.words{
+/*    background-color: coral;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: swap 2400ms steps(6,end) forwards;
+    animation-delay: 600ms;
+}
+
+@keyframes swap{
+    100%{
+        transform: translateY(-8.4em);
+    }
+}
+
 #heading {
-    
 /*    border:1px solid green;*/
-    
     margin-left: 30px;
     margin-top: 15px;
 
@@ -123,7 +157,6 @@ letter-spacing: 0.05em;
 /*    letter-spacing: 0.05em;*/
     color: #F15454;
 }
-
 
 
 #tri{
