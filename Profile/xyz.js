@@ -7,7 +7,7 @@ clearInterval();
 //Typing
 
 var i = 0,text;
-text = 'I am doing what I can.';
+text ='I am doing what I can.';
 
 function typing() {
   if (i<text.length){
