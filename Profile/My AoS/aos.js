@@ -24,12 +24,16 @@ if(scrolled >= 700){
         rightPoly.style.animation = "moveDOWN 300ms ease-in forwards";
     };
     
-if(scrolled >= 50){
-        navbar.style.animation = "navbarExpand 300ms linear forwards";
-        navInner.style.animation = "navInner 300ms linear forwards";
-    } else{
-        navbar.style.animation = "navbarCollapse 300ms linear forwards";
-    }
+if(scrolled > 0){
+        navbar.style.padding = "0px";
+        navInner.style.borderRadius = "0px";
+    navInner.style.boxShadow = "0px 0px 25px 0px rgba(0,0,0,0.4)"
+    }  
+else{
+    navbar.style.padding = "10px 10px 0px";
+    navInner.style.borderRadius = "5px";
+    navInner.style.boxShadow = "0px 0px 10px 0px rgba(0,0,0,0.7)"
+    };
 }
  
 

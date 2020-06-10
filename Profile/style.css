@@ -20,7 +20,7 @@ body,p,h2{
 /*    background-color: red;*/
     top:0px;
     z-index: 999;
-    animation: null;
+    transition: padding 200ms;
 }
 
 #navInner{
@@ -28,12 +28,12 @@ body,p,h2{
     border-radius: 5px;
     align-items: center;
     background-color:white;
-    box-shadow:0px 0px 13px 0px rgba(0,0,0,0.4);
+    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.7);
     width: 100%;
     height: 100%;
     justify-content: space-between;
     overflow: hidden;
-    animation: null;
+    transition: all 200ms;
 }
 
 #logo{
@@ -48,34 +48,7 @@ body,p,h2{
     font-size: 1.4em;
     font-family: 'Pacifico', cursive;
     letter-spacing: 4px;
-    animation: logo 300ms linear forwards;
 }
-
-@keyframes navbarExpand{
-    100%{
-        padding: 0px 0px 0px; 
-    }
-}
-
-@keyframes navInner{
-    100%{
-        border-radius: 0px; 
-    }
-}
-@keyframes navbarCollapse{
-    100%{
-        padding: 10px 10px 0px; 
-    }
-}
-
-@keyframes navInner{
-    100%{
-        border-radius: 0px; 
-    }
-}
-
-
-
 
 
 #menu{
