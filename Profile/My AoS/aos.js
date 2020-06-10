@@ -19,10 +19,14 @@ var scrolled = document.body.scrollTop || document.documentElement.scrollTop ;
     
 offset.innerHTML = scrolled.toPrecision(4);
     
+//About Me - Poly
+    
 if(scrolled >= 700){
         leftPoly.style.animation = "moveUP 300ms ease-in forwards";
         rightPoly.style.animation = "moveDOWN 300ms ease-in forwards";
     };
+    
+//Navigation Bar
     
 if(scrolled > 0){
         navbar.style.padding = "0px";
@@ -33,9 +37,11 @@ else{
     navbar.style.padding = "10px 10px 0px";
     navInner.style.borderRadius = "5px";
     navInner.style.boxShadow = "0px 0px 10px 0px rgba(0,0,0,0.7)"
-    };
+};
+    
 }
  
+
 
 
 
