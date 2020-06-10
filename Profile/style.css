@@ -106,39 +106,47 @@ body,p,h2{
 
 .line{
     display: flex;
-    height: 1.4em;
+    height: 1.2em;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-}
-
-.textblock{
 /*    border:1px solid red;*/
-    height: 100%;
-    width: auto;
-    overflow: hidden;
-    padding: 0px 8px;
 }
 
-.textblock p{
+#textblock{
+/*    border:1px solid blue;*/
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    width: 110px;
+    padding: 0px 8px 0px;
+    transition: all 300ms;
+}
+
+#textblock p{
     font-family: 'Allan', cursive;
     letter-spacing: 0.05em;
-    color: #000000;
-}
-
-.words{
+    color: #323232;
 /*    background-color: coral;*/
+}
+.textSwap{
+    height: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.words{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: swap 2400ms steps(6,end) forwards;
-    animation-delay: 600ms;
+    animation: slideup 5s ease forwards;
+    animation-delay: 2s;
 }
 
-@keyframes swap{
+@keyframes slideup{
     100%{
-        transform: translateY(-8.4em);
+        transform: translateY(-7.2em);
     }
 }
 
