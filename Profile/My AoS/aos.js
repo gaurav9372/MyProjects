@@ -27,12 +27,12 @@ if(scrolled >= 700){
 if(scrolled > 0){
         navbar.style.padding = "0px";
         navInner.style.borderRadius = "0px";
-    navInner.style.boxShadow = "0px 0px 25px 0px rgba(0,0,0,0.4)"
+    navInner.style.boxShadow = "0px 0px 35px 0px rgba(0,0,0,0.2)"
     }  
 else{
     navbar.style.padding = "10px 10px 0px";
     navInner.style.borderRadius = "5px";
-    navInner.style.boxShadow = "0px 0px 10px 0px rgba(0,0,0,0.7)"
+    navInner.style.boxShadow = "0px 0px 8px 0px rgba(0,0,0,0.8)"
     };
 }
  
