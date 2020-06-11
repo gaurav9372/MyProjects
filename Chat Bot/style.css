@@ -1,0 +1,289 @@
+*{
+box-sizing: border-box;
+}
+
+/*Global*/
+
+body{
+    cursor: default;
+    font-family: "poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body,p{
+    padding: 0px;
+    margin: 0px;
+}
+
+#mainButtonCont{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#chatButton{
+    border: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #00cad1;
+    box-shadow: 0px 0px 60px 0px rgba( 1, 218, 238, 0.3 );
+    color: #fff;
+    font-size: 1.4em;
+    display: block;
+}
+
+#chatButton:focus{
+    outline: 0px;
+}
+#chatButton:hover{
+    background-color: #00b6c6;
+}
+#chatButton:active{
+    background-color: #00b6c6;
+    transform: scale(0.95);
+}
+
+
+#mainframe{
+    
+    display: none;
+    width: 300px;
+    flex-direction: column;
+    height:145px;
+    border-radius: 15px;
+
+/*    border: 2px solid #fff;*/
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
+     animation: expand 1s forwards ease;
+    animation-delay: 300ms;
+}
+
+@keyframes expand{
+    100%{
+        height: 480px;
+    }
+}
+
+#header{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+        border-radius: 15px;
+
+    position: relative;
+}
+
+#close{
+    border: 0px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display:flex;
+    position: absolute;
+    right: -15px;
+    top:-15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
+        padding:8px;
+    transform: rotate(45deg);
+    transition: transform 200ms;
+}
+
+#close:hover{
+    transform: rotate(135deg);
+}
+
+#close:focus{
+    outline: 0px;
+}
+
+
+#heading{
+/*    background-color: aqua;*/
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#heading P{
+    color: #00cad1;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+#picture{
+    width: 50px;
+    height: 100%;
+/*    background-color: crimson;*/
+    border-radius: 50%;
+}
+#content{
+    position: relative;
+    background: url("images/background.png");
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    flex: 1;
+    width: 100%;
+/*    background-color: red;*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.dialogBoxBot{
+    max-width: 150px;
+    min-width: 1em;
+    min-height: 1em;
+    background-color: crimson;
+    right:0px;
+    position: absolute;
+    margin: 0px 20px 0px 0px;
+    color: #fff;
+    font-size: 0.7em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+/*    overflow: hidden;*/
+    border-radius: 10px 10px 0px 10px;
+}
+
+.dialogBoxBot::before{
+    content: "";
+    position: absolute;
+    right: -8px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-top:4px solid transparent;
+    border-right:4px solid transparent;
+    border-bottom:4px solid crimson;
+    border-left:4px solid crimson;
+}
+
+.dialogBoxUser{
+    max-width: 150px;
+    min-width: 1em;
+    min-height: 1em;
+    background-color: #ffffff;
+    top:70px;
+   left:0px;
+    position: absolute;
+    margin: 0px 0px 0px 20px;
+    color: #000;
+    font-size: 0.7em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+/*    overflow: hidden;*/
+    border-radius: 10px 10px 10px 0px;
+}
+
+.dialogBoxUser::before{
+    content: "";
+    position: absolute;
+    left: -8px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-top:4px solid transparent;
+    border-right:4px solid #fff;
+    border-bottom:4px solid #fff;
+    border-left:4px solid transparent;
+}
+
+#footer{
+    height: 65px;
+    width: 100%;
+    padding: 10px 10px 20px;
+    background-color: crimson;
+    display: flex;
+    border-radius:0px 0px 15px 15px;
+    justify-content: space-between;
+}
+
+#textboxCont{
+    display: flex;
+    height: 100%;
+    flex: 1;
+    padding: 0px 10px 0px 0px;
+}
+#textboxCont input{
+    width: 100%;
+    border:0px solid #00cad1;
+    border-radius: 5px;
+    padding: 0px 8px;
+}
+#textboxCont input:focus{
+    outline: 0px;
+}
+
+#sendButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 100%;
+}
+#sendButton button{
+    height: 100%;
+    background-color: #3ccf06;
+    border:0px;
+    border-radius: 50%;
+    width: 100%;
+    padding: 10px 6px 10px 10px; 
+}
+#sendButton button:hover{
+    background-color: #009699;
+    border:0px;
+    border-radius: 50%;
+    width: 100%;
+    padding: 10px 6px 10px 10px; 
+}
+#sendButton button:focus{
+    outline: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 600px){
+
+}
+
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}
+
+
+
