@@ -1,18 +1,19 @@
 var mainframe = document.getElementById("mainframe");
 
-var mainButtonCont = document.getElementById("mainButtonCont");
+var helpButton = document.getElementById("helpButton");
 
 var content = document.getElementById("content");
 
-function openChat(){
-    mainButtonCont.style.display = "none";
+function openChatUI(){
+    helpButton.style.display = "none";
     mainframe.style.display = "flex";
 }
 
-function closeChat(){
+function closeChatUI(){
     
-    mainButtonCont.style.display = "block";
+    helpButton.style.display = "flex";
     mainframe.style.display = "none";
     
 }
 
+ 

@@ -17,89 +17,79 @@ body,p{
     margin: 0px;
 }
 
-#mainButtonCont{
-    width: 80px;
-    height: 80px;
+#helpButton{
     display: flex;
+    height: 50px;
+    width: 100px;
     justify-content: center;
     align-items: center;
-   
-}
-
-#chatButton{
     border: 0px;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background-color: #00cad1;
-    box-shadow: 0px 0px 60px 0px rgba( 1, 218, 238, 0.3 );
+    border-radius: 25px;
+    background-color: hsl(150deg,90%,30%);
+    box-shadow: 0px 0px 60px 0px hsla(150deg,50%,50%,0.4);
     color: #fff;
-    font-size: 1.4em;
-    display: block;
+    font-size: 1em;
 }
-
-#chatButton:focus{
+#helpButton:focus{
     outline: 0px;
 }
-#chatButton:hover{
-    background-color: #00b6c6;
+#helpButton:hover{
+    background-color:hsl(150deg,80%,45%) ;;
 }
-#chatButton:active{
-    background-color: #00b6c6;
+#helpButton:active{
     transform: scale(0.95);
 }
 
 
-#mainframe{
-    
-    display: none;
-    width: 350px;
-    flex-direction: column;
-    height:145px;
-    border-radius: 15px;
 
-/*    border: 2px solid #fff;*/
+/*Chat UI*/
+
+
+
+
+
+#mainframe{
+    display: none;
+    flex-direction: column;
+    width: 350px;
+    height:195px;
     box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
      animation: expand 1s forwards ease;
     animation-delay: 300ms;
+    background:linear-gradient(hsl(150deg,85%,50%),hsl(150deg,75%,35%));
 }
 
 @keyframes expand{
     100%{
-        height: 480px;
+        height: 600px;
     }
 }
 
 #header{
-    height: 80px;
-    width: 100%;
-    background-color: #fff;
+    position: relative;
     display: flex;
+    height: 115px;
+    width: 100%;
+    background-color: hsl(150deg,85%,50%);
     justify-content: space-between;
     padding: 15px;
-        border-radius: 15px;
-
-    position: relative;
+    flex-direction: column;
 }
 
 #close{
     border: 0px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     display:flex;
     position: absolute;
-    right: -15px;
-    top:-15px;
+    right: -17px;
+    top:-17px;
     background-color: #fff;
     box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
-        padding:8px;
-    transform: rotate(45deg);
-    transition: transform 200ms;
-}
-
-#close:hover{
-    transform: rotate(135deg);
+    padding:8px;
+    transform: rotate(45deg) scale(0.5);
+    animation: rotating 1s ease forwards;
 }
 
 #close:focus{
@@ -107,38 +97,48 @@ body,p{
 }
 
 
-#heading{
-/*    background-color: aqua;*/
-    height: 100%;
-    width: 70%;
+@keyframes rotating{
+    100%{
+        transform: rotate(225deg) scale(1.1);
+    }
+}
+
+#helloUserCont{
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background:linear-gradient(-90deg,hsl(150deg,85%,50%),hsl(150deg,75%,45%));
 }
-#heading P{
-    color: #00cad1;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 1.5em;
+#helloUserCont P{
+font-family: Poppins,sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 1.5em;
+letter-spacing: 0.05em;
+color: #FFFFFF;
 }
 
-#picture{
-    width: 50px;
-    height: 100%;
-/*    background-color: crimson;*/
-    border-radius: 50%;
+#extraText{
+    width: 100%
 }
+#extraText p{
+    font-family: Poppins;
+    font-size: 0.9em;
+    color: #323232;
+}
+
 #content{
     position: relative;
-    background: url("images/background.png");
-        background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     display: flex;
     flex: 1;
     width: 100%;
-/*    background-color: red;*/
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px; 
+    background-color: hsl(150deg,90%,30%);
+    
 }
 
 
@@ -159,7 +159,6 @@ body,p{
 /*    overflow: hidden;*/
     border-radius: 10px 10px 0px 10px;
 }
-
 .dialogBoxBot::before{
     content: "";
     position: absolute;
@@ -191,7 +190,6 @@ body,p{
 /*    overflow: hidden;*/
     border-radius: 10px 10px 10px 0px;
 }
-
 .dialogBoxUser::before{
     content: "";
     position: absolute;
@@ -206,27 +204,28 @@ body,p{
 }
 
 #footer{
-    height: 65px;
-    width: 100%;
-    padding: 10px 10px 20px;
-    background-color: crimson;
     display: flex;
-    border-radius:0px 0px 15px 15px;
-    justify-content: space-between;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    padding: 15px ;
+    background-color:hsl(150deg,80%,45%) ;
 }
 
 #textboxCont{
     display: flex;
     height: 100%;
     flex: 1;
-    padding: 0px 10px 0px 0px;
+/*    background: red;*/
+    padding: 0px 15px 0px 0px;
 }
+
 #textboxCont input{
     width: 100%;
-    font-size: 1em;
-    border:0px solid #00cad1;
-    border-radius: 5px;
-    padding: 0px 8px;
+    font-size: 0.9em;
+    border:0px;
+    border-radius: 25px;
+    padding: 0px 20px;
 }
 #textboxCont input:focus{
     outline: 0px;
@@ -236,16 +235,12 @@ body,p{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
+    width: 50px;
     height: 100%;
-}
-#sendButton button{
-    height: 100%;
-    background-color: #3ccf06;
     border:0px;
+    background-color: hsl(315deg,75%,50%);
     border-radius: 50%;
-    width: 100%;
-    padding: 10px 6px 10px 10px; 
+    padding: 12px 5px 12px 12px; 
 }
 #sendButton button:hover{
     background-color: #009699;
@@ -264,27 +259,6 @@ body,p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (min-width: 600px){
-
-}
-
-/*Desktop*/
-@media all and (min-width: 900px) {
-    body {
-    }
-}
 
 
 

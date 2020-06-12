@@ -12,28 +12,28 @@
  
 <body>
     
-    <div id="mainButtonCont">
-        <button type="button" id="chatButton" onclick="openChat()">
+    
+        <button type="button" id="helpButton" onclick="openChatUI()">
         Help
         </button>
-    </div>
+   
     
     
     
     <div id="mainframe">
         <div id="header">
-                <button id="close" type="button" onclick="closeChat()">
-                    <img src="images/other.svg" style="width: 100%;height: 100%;">
-                </button>
-
-            
-            <div id="heading">
+            <button id="close" type="button" onclick="closeChatUI()">
+                <img src="images/other.svg" style="width:100%;height:100%;">
+            </button>
+            <div id="helloUserCont">
                 <p>Hello User</p>
             </div>
-            <div id="picture">
-                <img src="images/user.svg" style="width:100%;height: 100%">
+            <div id="extraText">
+                <p>Let us help you with your queries.</p>
             </div>
         </div>
+        
+        
         <div id="content">
         
         <div class="dialogBoxBot">Hello friend , what is your name ?</div>
@@ -41,15 +41,16 @@
         <div class="dialogBoxUser">Shreyansh</div>    
             
         </div>
+        
         <div id="footer">
             <div id="textboxCont">
                 <input type="text" placeholder="Type here">
             </div>
-            <div id="sendButton">
-                <button type="button">
+            
+                <button id="sendButton" type="button">
                 <img src="images/send.svg" style="width: 100%;height: 100%;">
                 </button>
-            </div>
+        
         </div>
     </div>
 
