@@ -146,7 +146,7 @@ body,p{
 }
 @keyframes moveLeft{
     100%{
-        transform: translateX(-50px);
+        transform: translateX(-40px);
     }
 }
 
