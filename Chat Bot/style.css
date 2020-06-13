@@ -20,12 +20,12 @@ body,p{
 #helpButton{
     display: flex;
     height: 50px;
-    width: 130px;
+    width: 120px;
     align-items: center;
     border: 0px;
     border-radius: 25px;
-    background-color: hsl(150deg,90%,30%);
-    box-shadow: 0px 0px 60px 0px hsla(150deg,50%,50%,0.4);
+    background-color: hsl(200deg,90%,30%);
+    box-shadow: 0px 0px 60px 0px hsla(200deg,50%,50%,0.4);
     padding: 15px;
 }
 
@@ -34,7 +34,7 @@ body,p{
     outline: 0px;
 }
 #helpButton:hover{
-    background-color:hsl(150deg,80%,45%) ;;
+    background-color:hsl(200deg,80%,45%) ;;
 }
 #helpButton:active{
     transform: scale(0.95);
@@ -70,7 +70,7 @@ body,p{
      
     
     border-radius: 25px 25px 40px 40px;
-    background-color: hsl(150deg,85%,50%);
+    background-color: hsl(200deg,85%,50%);
     
     animation: mainframe 1s forwards ease;
     animation-delay: 300ms;
@@ -82,7 +82,7 @@ body,p{
     display: flex;
     height: 115px;
     width: 100%;
-    background-color: hsl(150deg,85%,50%);
+    background-color: hsl(200deg,85%,50%);
     justify-content: space-between;
     padding: 15px;
     flex-direction: column;
@@ -131,8 +131,8 @@ body,p{
     align-items: center;
     padding: 10px;
     border-radius: 10px;
-    background:linear-gradient(-90deg,hsl(150deg,85%,50%),hsl(150deg,75%,45%));
-    animation: helloUserCont 1s ease forwards;
+    background:linear-gradient(-90deg,hsl(200deg,85%,50%),hsl(200deg,75%,45%));
+    animation: helloUserCont 2000ms ease forwards;
      animation-delay: 300ms;
 }
 #helloUserCont P{
@@ -150,7 +150,7 @@ color: #FFFFFF;
 #extraText p{
     font-family: Poppins;
     font-size: 0.9em;
-    color: #323232;
+    color: #fff;
 }
 
 #content{
@@ -159,7 +159,7 @@ color: #FFFFFF;
     flex: 1;
     width: 100%;
     border-radius: 20px 20px 0px 0px; 
-    background-color: hsl(150deg,90%,30%); 
+    background-color: hsl(200deg,90%,30%); 
 }
 
 
@@ -230,7 +230,7 @@ color: #FFFFFF;
     height: 80px;
     width: 100%;
     padding: 15px ;
-    background-color:hsl(150deg,80%,45%) ;
+    background-color:hsl(200deg,80%,45%) ;
     border-radius: 0px 0px 40px 40px;
 }
 
@@ -265,7 +265,7 @@ color: #FFFFFF;
     border:0px;
     padding: 0px 10px 0px 00px;
      border-radius: 0px 25px 25px 0px;
-    animation: textboxCont 1s forwards ease; 
+    animation: textboxCont 2000ms forwards ease; 
      animation-delay: 300ms;
 }
 
@@ -281,12 +281,13 @@ color: #FFFFFF;
     width: 50px;
     height: 100%;
     border:0px;
-    background-color: hsl(315deg,75%,50%);
+    background-color: hsl(290deg,100%,30%);
     border-radius: 50%;
     padding: 12px 5px 12px 12px; 
 }
+
 #sendButton:hover{
-    background-color: #009699;
+    background-color: hsl(290deg,100%,20%);
 }
 #sendButton:focus{
     outline: 0px;
