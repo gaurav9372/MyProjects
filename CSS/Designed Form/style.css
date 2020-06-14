@@ -1,34 +1,3 @@
-/*Shortcuts     
-
-color picker    ctrl + alt + K
-
-'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace
-'Josefin Sans'
-'Inconsolata' , monospace ;
-*/
-
-/*Resetting*/
-
-*::after,
-*::before{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
- 
-*{
-/*   box-shadow: 0px 0px 0px 1px #999999;*/
-/*   border-radius: 3px;*/
-}
-
-                      /*Global*/
-body {
-    -webkit-box-sizing: border-box;
-    padding: 0px;
-    margin: 0px; 
-    
-}
-
-
 :root{
     --pcolor:hsla(350,70%,50%,1);
     --pcolordark:hsla(350,70%,35%,1);
@@ -36,164 +5,114 @@ body {
     --scolor:hsla(43,90%,50%,1);
 }
 
-.body_section{
-    display: flex;
-    width: 100%;
-    height: 700px;
-    justify-content: center;
-    align-items: center;
-    background-color: hsla(0,0%,15%,1);
-/*    background-color: #fff;*/
+*{
+    box-sizing: border-box;
 }
 
-.big_container{
+                   /*Global*/
+body,p,h1{
+    padding: 0px;
+    margin: 0px; 
+}
+
+body{
     display: flex;
-    width: 800px;
-    height: 500px;
-    min-width: 800px;
-    box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.4);
-    border-radius: 15px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0,0%,30%,1);
+}
+
+#mainFrame{
+    position: relative;
+    display: flex;
+    min-width: 380px;
+    width: 380px;
+    height: 550px;
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
+    border-radius: 20px;
     overflow: hidden;
     background-color: #fff;
 }
-.wrapper{
+
+.wrapperRight{
     height: 100%;
-}
-.left{
-    height: 100%;
-    width: 58%;
-}
-.right{
-    height: 100%;
-    width:43%;
+    display: none;
 }
 
-.fcontainer{
-    display:flex;
-/*    width:100%;*/
+.wrapperLeft{
+    position: relative;
+    width: 100%;
     height: 100%;
-/*    background-color: black;*/
+    display:flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
 
-/*
-.fcontainer .gradient1{
-    box-shadow: 0px 0px 19px 0px green;
+.header{
     position: absolute;
-    background-color: var(--pcolor);
-    height: 140px;
-    top:0px;
-    left:-10px;
-    width: 130%;
-    transform: rotate(10deg);
-    animation: moveg1 3s infinite ease-in-out;
-}
-@keyframes moveg1{
-    0%{
-    }
-    50%{
-       top:16px;
-    }
-    100%{
-    }
-    
-}
-.fcontainer .gradient2{
-    box-shadow: 0px 0px 20px 0px green;
-    position: absolute;
-    background-color: var(--pcolordark);
-    width: 130px;
-    right: -20px;
-    height: 130%;
-    transform: rotate(9deg);
-    animation: moveg2 4s infinite ease-in-out;
-}
-@keyframes moveg2{
-    0%{
-        
-    }
-    50%{
-        right: 0px;
-    }
-    100%{
-    
-    }
-    
-}
-*/
-.fheader{
+    top: 30px;
     display: flex;
     width: 100%;
     justify-content: center;
-    padding-top: 30px;
     align-items: center;
     flex-direction: column;
-/*    background-color: aqua;*/
-/*    justify-content: center;*/
 }
 
-.fheader h1{
+.header h1{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0px;
     color: var(--pcolor);
-/*    letter-spacing: 1px;*/
-    padding: 0px;
-}
-.fheader p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.8em;
-    margin: 0px;
-    padding: 0px;
-/*
-    Bebas Neue
-    Carter One
-    Staatliches
-    Josefin Sans
-    Lobster
-    Montserrat
-    Open Sans
-    Righteous
-*/
-/*    color:rgba(255,255,255,1);*/
-    letter-spacing: 1px;
-}
-.fheader a{
-    color: #000 !important;
 }
 
-.inner_container{
+.header p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    margin: 0.7em 0em;
+    letter-spacing: 0.5px;
+}
+
+.header a{
+    color: #5787da;
+    text-decoration: none;
+}
+
+form{
     display: flex;
-    padding: 0px 0px;
-    width: 80%;
-    margin-top: 30px;
+    width: 300px;
+    height: 280px;
+    margin:auto;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-.inner_container .caption{
+
+form input{
     width: 100%;
-    line-height: 1.7em;
+    padding: 0px 0.8em;
+    border: 1px solid var(--pcolor);
+    border-radius: 1.1em;
+    height: 2.2em;
     font-size: 0.9em;
-    display: flex;
-    align-items: center;
+    background-color: #fff;
+    width: 100%;
+}
+
+form .caption{
+    width: 100%;
+    font-size: 0.9em;
+    margin-bottom: 0.2em;
     font-family: 'poppins',sans-serif;
 }
-.inner_container .textbox{
-    border: 1px solid var(--pcolor);
-    border-radius: 1.7em;
-    font-size: 0.8em;
-    height: 32px;
-    padding: 0px 10px;
-    background-color: rgba(255,255,255,1);
-    width: 100%;
-/*    box-shadow:inset 0px 0px 4px 0px rgba(0,0,0,0.3);*/
+
+form .textbox{
 }
 
-.inner_container .textbox:focus{
-    box-shadow:0px 0px 5px 0px var(--pcolor);
+form input:focus{
+    box-shadow:0px 0px 5px 0px hsla(350,70%,50%,0.9);
     outline: 0px;
 }
 .row{
@@ -201,28 +120,28 @@ body {
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 12px;
     align-items: center; 
 }
-.inner_container .w50{
-    width: 43%;   
+form .w50{
+    width: 49%;   
 }
-.inner_container .w100{
+form .w100{
     width: 100%;
 }
 
 .button{
     display: flex;
+    position: absolute;
+    bottom: 50px;
     align-content: center;
     justify-content: center;
-    font-size: var(--button_font_size);
-    height: 32px;
-    border-radius: 30px;
+    font-size: 0.9em;
+    height: 2.2em;
+    border-radius: 1.1em;
     background-color: var(--pcolor);
-    margin-top: 20px;
     color: #fff;
     border: 0px;
-    width: 100%;
+    width: 120px;
 }
 .button:hover{
     border: 2px solid var(--pcolor); 
@@ -234,11 +153,29 @@ body {
 }
 
 
-.background{
+#background{
     background-image: url("cover.jpg");
     width: 100%;
     height: 100%;
+    background-color: crimson;
     background-size: cover;
     background-position: 92% 50%;
     background-repeat: no-repeat;
+}
+
+
+
+
+@media only screen and (min-width: 700px) {
+    #mainFrame{
+    width: 90%;
+    max-width: 800px;
+    }
+    .wrapperRight{
+        display: flex;
+        flex: 1;
+    }
+    .wrapperLeft{
+    width: 380px;
+    }
 }

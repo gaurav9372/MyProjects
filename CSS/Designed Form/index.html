@@ -6,15 +6,18 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
- 
+  
     <link rel="stylesheet" type="text/css" href="style.css">
     
 
-    <title>Signup</title>
+    <title>Signup Page</title>
 
 
 <!--  Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Bebas+Neue&family=Carter+One&family=Staatliches&family=Josefin+Sans&family=Lato:wght@400;700;900&family=Lobster&family=Montserrat&family=Open+Sans:wght@400;700;800&family=Oswald:wght@300;400&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins
+&family=Oswald:wght@300;400
+&display=swap" rel="stylesheet">
 
 
 </head>
@@ -22,59 +25,64 @@
 <body>
  
 <!--  Sign in   -->
-<main>
-<div class="body_section">
-    <div class="big_container">
-        <div class="wrapper left">
-            <div class="fcontainer">
-<!--
-    <div class="gradient2"></div>
-    <div class="gradient1"></div>
--->
-                <div class="fheader">
-                    <h1>Create your account</h1>
-                    <p>Already have an account ?
-                        <a href="login.html">Login
-                        </a>
-                    </p>
-                </div>    
-                <form class="inner_container">
-                    <div class="row">
-        <div class="caption">Name</div>
-        <input type="text" name="firstname" placeholder="First name" class="textbox w50">
-        <input type="text" name="lastname" placeholder="Last name" class="textbox w50">
+    <div id="mainFrame">
+        <div class="wrapperLeft">
+            <div class="header">
+                <h1>Create your account</h1>
+                <p>Already have an account ?
+                <a href="login.html">Login</a>
+                </p>
+            </div>    
+    <form>
+        <div class="row">
+        <p class="caption">Name</p>
+         
+        <div class="textbox w50">
+        <input type="text" name="firstname" placeholder="First name" required>
+        </div>
+            
+        <div class="textbox w50">
+        <input type="text" name="lastname" placeholder="Last name" required> 
+            </div>
+        </div>
+        
+        <div class="row">
+        <p class="caption">Email</p>
+            
+        <div class="textbox w100">
+        <input type="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+                
+        <div class="row">
+        <p class="caption">Mobile Number</p>
+            
+            <div class="textbox w100">
+        <input type="number" placeholder="Enter your mobile number" required>
+        </div>
+        </div>
+        
+        <div class="row">
+        <p class="caption">Password</p>
+            
+            <div class="textbox w50">
+        <input type="password" placeholder="Enter password"  required>
+            </div>
+            
+            <div class="textbox w50">
+        <input type="password" placeholder="Confirm password" required>
+            </div>
     </div>
-                    <div class="row">
-        <div class="caption">Email</div>
-        <input type="email" placeholder="Enter your email" class="textbox w100">
-    </div>
-                    <div class="row">
-
-        <div class="caption">Mobile Number</div>
-        <input type="number" placeholder="Enter your mobile number" class="textbox w100">
-
-    </div>
-                    <div class="row">
-        <div class="caption">Password</div>
-        <input type="password" placeholder="Enter password" class="textbox w50">
-        <input type="password" placeholder="Confirm password" class="textbox w50">
-    </div>
-                    <div class="row">
-                        <input class="button" type="button" value="Submit">
-                    </div>
+            
+                <input class="button" type="button" value="Submit">
+        
                 </form>
             </div>
-        </div>
-        <div class="wrapper right">
-            <div class="background">
+        <div class="wrapperRight">
+            <div id="background">
             </div>
         </div>
     </div>
-</div>
-     
-      
-       
-</main>    
         <!--Footer-->
 
 
