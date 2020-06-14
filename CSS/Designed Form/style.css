@@ -27,11 +27,11 @@ body{
 #mainFrame{
     position: relative;
     display: flex;
-    min-width: 380px;
-    width: 380px;
+    min-width: 370px;
+    width: 370px;
     height: 550px;
     box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
-    border-radius: 20px;
+    border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
 }
@@ -48,41 +48,49 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.6);
 }
 
 .header{
     position: absolute;
-    top: 30px;
+    top: -70px;
+    height: 200px;
     display: flex;
-    width: 100%;
+    width: 580px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--pcolor);
+    border-radius:50%;
+    padding-top: 60px;
 }
 
 .header h1{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--pcolor);
+    color: #fff;
 }
 
 .header p{
     font-family: 'Poppins', sans-serif;
+    color: #fff;
     font-size: 0.8em;
     margin: 0.7em 0em;
     letter-spacing: 0.5px;
 }
 
 .header a{
-    color: #5787da;
+    color: #fff;
+    font-weight: bold;
     text-decoration: none;
 }
 
 form{
     display: flex;
-    width: 300px;
+    width: 100%;
     height: 280px;
     margin:auto;
     flex-direction: column;
@@ -94,8 +102,8 @@ form input{
     width: 100%;
     padding: 0px 0.8em;
     border: 1px solid var(--pcolor);
-    border-radius: 1.1em;
-    height: 2.2em;
+    border-radius: 18px;
+    height: 35px;
     font-size: 0.9em;
     background-color: #fff;
     width: 100%;
@@ -109,6 +117,7 @@ form .caption{
 }
 
 form .textbox{
+    position: relative;
 }
 
 form input:focus{
@@ -129,6 +138,45 @@ form .w100{
     width: 100%;
 }
 
+
+.caution{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 230px;
+    position: absolute;
+    bottom:-32px;
+    animation: caution 400ms ease forwards;
+    opacity:0;
+}
+
+@keyframes caution{
+    100%{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+.caution img{
+    height: 0.9em;
+    width: 0.89em;
+    margin-right: 2px;
+    padding-bottom: 0px;
+}
+
+.caution p{
+    font-family: sans-serif;
+    font-size: 0.75em;
+    color: var(--pcolor);
+/*    background-color: aliceblue;*/
+/*    border:1px solid black;*/
+/*    padding: 3px;*/
+    border-radius: 4px;
+    
+    left: 0px;
+}
+
+
 .button{
     display: flex;
     position: absolute;
@@ -136,13 +184,14 @@ form .w100{
     align-content: center;
     justify-content: center;
     font-size: 0.9em;
-    height: 2.2em;
-    border-radius: 1.1em;
+    height: 35px;
+    border-radius: 18px;
     background-color: var(--pcolor);
     color: #fff;
     border: 0px;
     width: 120px;
 }
+
 .button:hover{
     border: 2px solid var(--pcolor); 
     background-color: transparent;
@@ -176,6 +225,6 @@ form .w100{
         flex: 1;
     }
     .wrapperLeft{
-    width: 380px;
+    width: 370px;
     }
 }

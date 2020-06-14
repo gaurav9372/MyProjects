@@ -38,11 +38,11 @@
         <p class="caption">Name</p>
          
         <div class="textbox w50">
-        <input type="text" name="firstname" placeholder="First name" required>
+        <input type="text" name="firstname" placeholder="First name" maxlength="15" required>
         </div>
             
         <div class="textbox w50">
-        <input type="text" name="lastname" placeholder="Last name" required> 
+        <input type="text" name="lastname" placeholder="Last name" maxlength="15" required> 
             </div>
         </div>
         
@@ -58,20 +58,25 @@
         <p class="caption">Mobile Number</p>
             
             <div class="textbox w100">
-        <input type="number" placeholder="Enter your mobile number" required>
+        <input type="number" placeholder="Enter your mobile number" maxlength="10" required>
         </div>
         </div>
         
-        <div class="row">
+    <div class="row">
         <p class="caption">Password</p>
             
-            <div class="textbox w50">
-        <input type="password" placeholder="Enter password"  required>
+        <div class="textbox w50">
+            <div class="caution">
+                <img src="icons/caution.svg">
+                <p>
+                Password length should be  atleast 6
+                </p>
             </div>
-            
-            <div class="textbox w50">
-        <input type="password" placeholder="Confirm password" required>
-            </div>
+            <input type="password" placeholder="Enter password" minlength="6" maxlength="15" required>
+        </div>
+        <div class="textbox w50">
+            <input type="password" placeholder="Confirm password"minlength="6" maxlength="15" required>
+        </div>
     </div>
             
                 <input class="button" type="button" value="Submit">
