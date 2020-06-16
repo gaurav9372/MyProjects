@@ -1,12 +1,12 @@
-function changecolor() {
-    var el = document.getElementById('box');
-    
-    if (el.className == 'bluebox')
-    {
-        el.className = 'greenbox';
-    }
-    else 
-    {
-        el.className = 'bluebox';
-    }
-}
+$('input').focus(function(){
+  $(this).prev().addClass('focused');
+});
+
+$('input').blur(function(){
+  var inputValue = $(this).val();
+  if ( inputValue == "" ) {
+    $(this).prev().removeClass('focused');  
+  } else {
+    $(this).prev().addClass('focused');
+  }
+})  

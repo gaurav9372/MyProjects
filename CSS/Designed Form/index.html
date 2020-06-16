@@ -18,6 +18,8 @@
     family=Poppins
 &family=Oswald:wght@300;400
 &display=swap" rel="stylesheet">
+    
+    <script src="jquery-3.5.1.js"></script>
 
 
 </head>
@@ -35,53 +37,75 @@
             </div>    
     <form>
         <div class="row">
-        <p class="caption">Name</p>
+
          
-        <div class="textbox w50">
-        <input type="text" name="firstname" placeholder="First name" maxlength="15" required>
+        <div class="textbox w50 " >
+            
+        <label class="focused" for="firstName">First Name</label>
+            
+        <input type="text" id="firstName" name="firstName" maxlength="15" required>
+            
         </div>
             
         <div class="textbox w50">
-        <input type="text" name="lastname" placeholder="Last name" maxlength="15" required> 
+         <label for="lastName">Last Name</label> 
+            
+        <input type="text" id="lastName" name="lastName" maxlength="15" required> 
             </div>
         </div>
         
         <div class="row">
-        <p class="caption">Email</p>
+
             
         <div class="textbox w100">
-        <input type="email" placeholder="Enter your email" required>
+            
+        <label for="email">Email</label>
+                
+        <input id="email" type="email" required>
             </div>
         </div>
                 
         <div class="row">
-        <p class="caption">Mobile Number</p>
+
             
             <div class="textbox w100">
-        <input type="number" placeholder="Enter your mobile number" maxlength="10" required>
+                
+                <label for="mobileNumber">Mobile number</label>
+        <input id="mobileNumber" type="number" maxlength="10" required>
         </div>
         </div>
         
-    <div class="row">
-        <p class="caption">Password</p>
+        <div class="row">
+<!--        <p class="placeholder">Password</p>-->
             
         <div class="textbox w50">
+          
             <div class="caution">
                 <img src="icons/caution.svg">
                 <p>
                 Password length should be  atleast 6
                 </p>
             </div>
-            <input type="password" placeholder="Enter password" minlength="6" maxlength="15" required>
+            
+            <label for="password">
+            Password
+            </label>
+            
+            <input id="password" type="password" minlength="6" maxlength="15" required>
         </div>
         <div class="textbox w50">
-            <input type="password" placeholder="Confirm password"minlength="6" maxlength="15" required>
+            
+            <label for="passwordConfirm">
+            Confirm password
+            </label>
+            
+            <input id="passwordConfirm" type="password" minlength="6" maxlength="15" required>
         </div>
     </div>
             
-                <input class="button" type="button" value="Submit">
+        <button class="button" type="button">Submit</button>
         
-                </form>
+    </form>
             </div>
         <div class="wrapperRight">
             <div id="background">
@@ -90,6 +114,7 @@
     </div>
         <!--Footer-->
 
+    <script type="text/javascript" src="xyz.js"></script>
 
 </body>
 
