@@ -1,23 +1,42 @@
-var cssAccord = document.getElementById("cssAccord");
+$(document).ready(function(){
+    
+    
+    
+$('#projectsButton').click
+(
+function(){
+     
+$(".projectTab").toggleClass("active");
+$(".practiceTab").removeClass("active");
+    
+$(this).toggleClass("moveProject");
+$(".panel").toggleClass("enlargeProjects");   
+    
+     
+});
 
-var jsAccord = document.getElementById("jsAccord");
+    
+    
+$('#practicesButton').click
+(
+function(){
+     
+$(".practiceTab").toggleClass("active");
+$(".projectTab").removeClass("active");
+    
+$(this).toggleClass("movePractice");
+$(".panel").toggleClass("enlargePractices"); 
+     
+});
 
-var acc = document.getElementsByClassName("accordion");
-
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+});
