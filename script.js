@@ -1,34 +1,36 @@
 $(document).ready(function(){
-    
-    
-    
-$('#projectsButton').click
-(
-function(){
      
-$(".projectTab").toggleClass("active");
-$(".practiceTab").removeClass("active");
     
-$(this).toggleClass("moveProject");
-$(".panel").toggleClass("enlargeProjects");   
-    
-     
-});
-
-    
-    
-$('#practicesButton').click
+$('#practiceButton').click
 (
 function(){
      
 $(".practiceTab").toggleClass("active");
 $(".projectTab").removeClass("active");
+$('#projectButton').toggleClass("deactive");
     
-$(this).toggleClass("movePractice");
-$(".panel").toggleClass("enlargePractices"); 
+    
+$(this).toggleClass("movePracticeButton");
+    
+$(".panel").toggleClass("expandPanel"); 
      
 });
 
+    
+$('#projectButton').click
+(
+function(){
+     
+$(".projectTab").toggleClass("active");
+$(".procticeTab").removeClass("active");
+$('#practiceButton').toggleClass("deactive");
+    
+    
+$(this).toggleClass("moveProjectButton");
+    
+$(".panel").toggleClass("expandPanel"); 
+     
+});
     
     
     

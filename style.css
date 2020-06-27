@@ -41,55 +41,47 @@ nav #subheader{
     font-family: 'Poppins',sans-serif;
     color:#949494;
 }
-
-#upper{
+ 
+main{
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
     position: relative;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+/*    padding-top: 50px;*/
 }
 
-#upper .panel{
-    width: 260px;
-    height: 260px;
+main .panel{
+    width: 250px;
+    height: 250px;
     position: relative;
     border-radius: 35px;
     transform: rotate(45deg);
     
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.1);
 /*    background-color: red;*/
     overflow: hidden;
     transition:all 100ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-.enlargeProjects{
-    animation: enlargeProjects 500ms linear forwards;
+
+.expandPanel{
+    animation: expandPanel 500ms linear forwards;
 }
-@keyframes enlargeProjects{
+
+@keyframes expandPanel{
     100%{
         transform: rotate(0deg);
-        height: 346px;
-        width: 360px;
-        border-radius: 35px 0px 35px 35px;
-        
+        width:380px;
+        height: 380px;    
     }
 }
 
-.enlargePractices{
-    animation: enlargePractices 500ms linear forwards;
-}
-@keyframes enlargePractices{
-    100%{
-        transform: rotate(0deg);
-        height: 346px;
-        width: 360px;
-        border-radius: 0px 35px 35px 35px;
-        
-    }
-}
 
 .panel::before{
     content: "";
@@ -106,23 +98,22 @@ background:url("Resources/Background.jpg");
     transform: rotate(-9.4deg);
 }
 
-#tabsBar{
+#buttons{
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     position: absolute;
     background-color: transparent;
-    margin: auto;
 }
 
 .button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
+    padding: 0px 20px;
     height: 45px;
-    font-size: 1em;
+    font-size: 0.9em;
     color:#fff;
     font-family: 'Poppins',sans-serif;
     text-transform: uppercase;
@@ -131,60 +122,60 @@ background:url("Resources/Background.jpg");
     cursor: pointer;
     z-index: 9;
     margin: 0px 50px;
-/*    transform: rotate(-35.6deg);*/
-    
+/*    transform: rotate(-45deg);    */
 }
 
-#practicesButton{
+#practiceButton{
     margin-bottom: 150px;
     background-color: #2D8AC8;
     transition: all 400ms;
 }
-#projectsButton{
+#projectButton{
     margin-top: 150px;
     background-color: #A98F4C;
-    transition: all 800ms;
+    transition: all 600ms;
     
 }
 
+.movePracticeButton{
+    transform: translatey(-115px);
+}
+.moveProjectButton{
+    transform: translatey(-265px);
+}
+
+
+
+
 .tab{
-    width: 100%;
+    position: absolute;
+     width: 100%;
     height: 100%;
+    opacity: 0;
     flex-direction: column;
     transition: all 300ms;
+
 }
+
 
 .practiceTab{
     display: flex;
     opacity: 0;
-    background-color: #2D8AC8;
+    background-color: #57AEE8;
 }
 .projectTab{
     display: flex;
     opacity: 0;
-    background-color: #A98F4C;
+    z-index: 9999;
+    background-color: #DBBD74;
 }
-
 .active{
     opacity: 1;
+   
 }
-
-.moveProject{
-
-    transform: translatey(-270px);
-    border-radius: 8px 8px 0px 0px;
+.deactive{
+    opacity: 0;
 }
-.movePractice{
-    transform: translatey(-120px);
-    border-radius: 8px 8px 0px 0px;
-}
-
-
-
-
-
-
-
 
 /*
 .item{
