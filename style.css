@@ -111,70 +111,128 @@ background:url("Resources/Background.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 15px;
     height: 45px;
-    font-size: 0.9em;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
     color:#fff;
     font-family: 'Poppins',sans-serif;
     text-transform: uppercase;
     border-radius: 8px;
     text-decoration: none;
     cursor: pointer;
-    z-index: 9;
-    margin: 0px 50px;
-/*    transform: rotate(-45deg);    */
+    margin: 0px 40px;
 }
 
-#practiceButton{
+#projectButton{
     margin-bottom: 150px;
     background-color: #2D8AC8;
     transition: all 400ms;
-}
-#projectButton{
-    margin-top: 150px;
-    background-color: #A98F4C;
-    transition: all 600ms;
     
 }
 
+#practiceButton{
+    margin-top: 150px;
+    background-color: #A98F4C;
+    
+    transition: all 600ms;
+}
+
 .movePracticeButton{
-    transform: translatey(-115px);
+   transform: translatey(-265px); 
 }
 .moveProjectButton{
-    transform: translatey(-265px);
+    transform: translatey(-115px);
 }
-
-
-
 
 .tab{
     position: absolute;
      width: 100%;
     height: 100%;
     opacity: 0;
-    flex-direction: column;
     transition: all 300ms;
-
 }
 
+.practiceTab{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.nextButton{
+    width: 140px;
+    height: 40px;
+    background-color: #2E2E2E;
+    border-radius: 8px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    border: 0px;
+    margin: 5px 0px 0px;
+}
+
+#css{
+    
+}
+
+#javascript{
+}
+
+#wave{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+}
+
+#practiceCover{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 55%;
+    width: 55%;
+    border-radius: 67px;
+    z-index: 1;
+}
+
+#nextCont{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+}
 
 .practiceTab{
     display: flex;
     opacity: 0;
-    background-color: #57AEE8;
+    background-color: #A98F4C;
+    
 }
 .projectTab{
     display: flex;
     opacity: 0;
     z-index: 9999;
-    background-color: #DBBD74;
+    
+    background-color: #57AEE8;
 }
+
+
+
 .active{
     opacity: 1;
    
 }
 .deactive{
     opacity: 0;
+    transform: scale(0.3);
 }
 
 /*
