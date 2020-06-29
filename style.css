@@ -10,15 +10,16 @@ body,p,h2,ul,li{
 body{
     position: relative;
     font-family: 'Poppins',sans-serif;
-    background: #fff;
+    
+    
 }
-
+ 
 nav{
     display: flex;
     width: 100%;
     flex-direction: column;
     position:absolute;
-    top: 20px;
+    top: 00px;
     right: 20px;
     z-index: 999;
     align-items: flex-end;
@@ -31,10 +32,11 @@ nav #header{
     display: flex;
     
     align-items: center;
-    color: #404040;
+    color: #fff;
     font-family: 'Staatliches',sans-serif;
     font-size: 1.5em;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.10em;
+    margin-top: 20px;
 }
 nav #subheader{
     font-size: 1em;
@@ -50,40 +52,9 @@ main{
     position: relative;
     justify-content: center;
     align-items: center;
+    background-color:#141414;
 /*    padding-top: 50px;*/
 }
-
-main .panel{
-    width: 250px;
-    height: 250px;
-    position: relative;
-    border-radius: 35px;
-    transform: rotate(45deg);
-    
-    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.1);
-/*    background-color: red;*/
-    overflow: hidden;
-    transition:all 100ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-.expandPanel{
-    animation: expandPanel 500ms linear forwards;
-}
-
-@keyframes expandPanel{
-    100%{
-        transform: rotate(0deg);
-        width:380px;
-        height: 380px;    
-    }
-}
-
-
 .panel::before{
     content: "";
     height: 120%;
@@ -97,6 +68,35 @@ background:url("Resources/Background.jpg");
     background-repeat: no-repeat;
     z-index: -1;
     transform: rotate(-9.4deg);
+}
+.panel{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border-radius: 35px;
+    transform: rotate(45deg);
+    
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.7);
+/*    background-color: red;*/
+    overflow: hidden;
+    transition:all 100ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.expandPanel{
+    animation: expandPanel 300ms linear forwards;
+}
+
+@keyframes expandPanel{
+    100%{
+        transform: rotate(0deg);
+        width:380px;
+        height: 380px;    
+    }
 }
 
 #buttons{
@@ -112,41 +112,42 @@ background:url("Resources/Background.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 15px;
-    height: 45px;
+    height:50px;
+    padding: 0px 20px;
     font-size: 1.2em;
     font-weight: bold;
     letter-spacing: 1px;
     color:#fff;
     font-family: 'Poppins',sans-serif;
     text-transform: uppercase;
-    border-radius: 8px;
+    border-radius: 25px;
     text-decoration: none;
     cursor: pointer;
-    margin: 0px 40px;
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
-    
-    
+    margin: 0px 35px;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.8);
 }
 
 #projectButton{
-    margin-bottom: 150px;
-    background-color: #2D8AC8;
+    margin-bottom: 190px;
+    background:linear-gradient(
+        #4EACE7,#3F85B4) ;
+    color:#fff ;
     transition: all 400ms;
 }
-
 #practiceButton{
-    margin-top: 150px;
-    background-color: #A98F4C;
+    margin-top: 190px;
+    background:linear-gradient(
+        #D9BC6F,#B49549) ;
+    color:#fff ;
     transition: all 600ms;
+    
 }
 
 .movePracticeButton{
-   transform:rotate(0deg) translatey(-265px); 
+   transform:rotate(0deg) translatey(-285px); 
 }
-
 .moveProjectButton{
-    transform: translatey(-115px);
+    transform: translatey(-90px);
 }
 
 .tab{
@@ -167,7 +168,7 @@ background:url("Resources/Background.jpg");
     padding: 0px;
     border: 0px;
     margin: 5px 0px 0px;
-    z-index: 1;
+    z-index: 99;
 }
 
 .nextButton:focus{
@@ -206,33 +207,24 @@ background:url("Resources/Background.jpg");
     position: absolute;
     top: 10px;
     left: 10px;
-    height: 55%;
-    width: 55%;
-    border-radius: 67px;
+    height: 57%;
+    width: 57;
+    border-radius: 76px;
     z-index: 1;
 }
 
-#nextCont{
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .practiceTab{
     display: flex;
     opacity: 0;
-    background-color: #A98F4C;
+    background-color: #D9BC6F;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
-    flex-direction: column;
-    padding: 30px;
-    
+/*    flex-direction: column;*/
+    padding: 35px;
 }
-
-
 .projectTab{
     display: flex;
     opacity: 0;
