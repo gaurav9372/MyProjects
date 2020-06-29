@@ -68,6 +68,7 @@ main .panel{
     justify-content: center;
     align-items: center;
     
+    
 }
 
 .expandPanel{
@@ -123,25 +124,27 @@ background:url("Resources/Background.jpg");
     text-decoration: none;
     cursor: pointer;
     margin: 0px 40px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
+    
+    
 }
 
 #projectButton{
     margin-bottom: 150px;
     background-color: #2D8AC8;
     transition: all 400ms;
-    
 }
 
 #practiceButton{
     margin-top: 150px;
     background-color: #A98F4C;
-    
     transition: all 600ms;
 }
 
 .movePracticeButton{
-   transform: translatey(-265px); 
+   transform:rotate(0deg) translatey(-265px); 
 }
+
 .moveProjectButton{
     transform: translatey(-115px);
 }
@@ -154,26 +157,33 @@ background:url("Resources/Background.jpg");
     transition: all 300ms;
 }
 
-.practiceTab{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    padding: 30px;
-}
+
 
 .nextButton{
     width: 140px;
     height: 40px;
     background-color: #2E2E2E;
     border-radius: 8px;
-    display: flex;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9em;
+    padding: 0px;
     border: 0px;
     margin: 5px 0px 0px;
+    z-index: 1;
+}
+
+.nextButton:focus{
+    outline: 0px;
+}
+
+.nextButton a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #css{
@@ -214,12 +224,19 @@ background:url("Resources/Background.jpg");
     display: flex;
     opacity: 0;
     background-color: #A98F4C;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 30px;
     
 }
+
+
 .projectTab{
     display: flex;
     opacity: 0;
-    z-index: 9999;
+    
     
     background-color: #57AEE8;
 }

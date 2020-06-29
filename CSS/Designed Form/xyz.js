@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $('input').focus(function(){
   $(this).prev().addClass('focused');
 });
@@ -9,4 +11,7 @@ $('input').blur(function(){
   } else {
     $(this).prev().addClass('focused');
   }
-})  
+})  ;
+    
+    
+});
