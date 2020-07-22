@@ -1,18 +1,17 @@
 $(document).ready(function(){
      
-    
+
 $('#practiceButton').click
 (
 function(){
-     
-$(".practiceTab").toggleClass("active");
-$(".projectTab").removeClass("active");
-$('#projectButton').toggleClass("deactive");
-    
+$("#navbar").toggleClass("hide");
+$(".practiceTab").toggleClass("show");
+$(".projectTab").removeClass("show");
+$('#projectButton').toggleClass("hide");
     
 $(this).toggleClass("movePracticeButton");
     
-$(".panel").toggleClass("expandPanel"); 
+$(".cover").toggleClass("expandCover"); 
      
 });
 
@@ -20,25 +19,15 @@ $(".panel").toggleClass("expandPanel");
 $('#projectButton').click
 (
 function(){
-     
-$(".projectTab").toggleClass("active");
-$(".procticeTab").removeClass("active");
-$('#practiceButton').toggleClass("deactive");
-    
+$("#navbar").toggleClass("hide");
+$(".projectTab").toggleClass("show");
+$(".procticeTab").removeClass("show");
+$('#practiceButton').toggleClass("hide");
     
 $(this).toggleClass("moveProjectButton");
     
-$(".panel").toggleClass("expandPanel"); 
+$(".cover").toggleClass("expandCover"); 
      
-});
-    
-    
-    
-    
-    
-    
-    
-    
-    
+});  
     
 });

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-     
+      
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -17,7 +17,7 @@
 
 <body>
 
-   <nav>
+   <nav id="navbar">
        <div id="header">
            Shreyansh Gaurav
        </div>
@@ -28,50 +28,57 @@
     
     <main>
         
-<div class="panel">    
-    <div class="tab practiceTab">
+<div class="cover">
     
-        <img id="practiceCover" src="Resources/practiceCover.jpg">
-         
-        <img id="wave" src="Resources/wave.svg" style="width:100%">
-        
-        
-            <button type="button" class="nextButton">
-                <a href="cssPractices.html" id="css">CSS</a>
-            </button>
-        
-            <button type="button" class="nextButton">
-                <a href="" id="javascript">Javascript</a>
-            </button>
-        
-    
-    </div>
     
     <div class="tab projectTab">
     
-        <ul>
-            <li>
+        <div class="subButton">
                 <a href="Pixler/index.html">
                     Pixler
                 </a>
-            </li>
-            <li>
+        </div>
+        <div class="subButton">
                 <a href="Chat Bot/index.html">
                     Chat Bot
                 </a>
-            </li>
-        </ul>
+        </div>
         
     </div>
+    
+    <div class="tab practiceTab">
+    
+        <div id="wave">
+            <img class="image" src="Resources/practiceCover.jpg">
+        </div>
+        
+        <div id="tabHalf">
+            
+            
+            <button type="button" class="subButton">
+                <a href="" id="css">Javascript</a>
+            </button>
+        
+            <button type="button" class="subButton">
+                <a href="" id="javascript">Jquery</a>
+            </button>
+            
+            <button type="button" class="subButton">
+                <a href="cssPractices.html" id="css">CSS</a>
+            </button>
+        </div>
+    
+    </div>
+    
+    
 </div>
     
-     
     <div id="buttons">
         
             <div class="button" id="projectButton">
             Projects
             </div>
-            
+        
             <div class="button" id="practiceButton">
             Practice
             </div>
