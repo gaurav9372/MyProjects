@@ -36,6 +36,7 @@ body,p,h1,h2,h3,h4,h5,h6{
     grid-template-rows: 120px 120px;
     animation: circles 5400ms linear infinite;
 }
+
 .circle{
     height: 120px;
     width: 120px;
