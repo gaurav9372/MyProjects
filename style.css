@@ -175,6 +175,8 @@ background:url("Resources/Background.jpg");
     flex-direction: column;
 }
 
+
+
 .practiceTab #wave{
     top: 0px;
     left: 0px;
@@ -205,7 +207,7 @@ background:url("Resources/Background.jpg");
 }
 
 
-.subButton{
+#tabHalf .subButton{
     position: relative;
     width: 100%;
     height: 40px;
@@ -216,6 +218,20 @@ background:url("Resources/Background.jpg");
     margin: 8px 0px;
     z-index: 9999999;
 }
+
+.darkshade{
+    position: absolute;
+    height: 100%;
+    background-color: #D9BC6F;
+    width: 50px;
+    right: 0px;
+    border-radius: 0px 5px 5px 0px;
+    background-image: url(Resources/next.svg);
+    background-position: 50% 50%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
 .subButton:focus{
     outline: 0px;
 }
@@ -256,32 +272,26 @@ background:url("Resources/Background.jpg");
 }
 
 
-.projectTab ul{
-    list-style-type: none;
-    width: 100%;
-    
-}
 
-.projectTab ul li{
+
+
+
+.projectTab .subButton{
+    position: relative;
     width: 100%;
     height: 40px;
     background-color: #3F85B4;
     border-radius: 5px;
-    margin: 5px 0px;
+    padding: 0px;
+    
+    border: 0px;
+    margin: 8px 0px;
+    z-index: 9999999;
 }
 
-.projectTab ul li a{
-    width: 100%;
-    height: 100%;
+.projectTab .subButton a{
     color: #fff;
-    text-decoration: none;
-    display: flex;
-    cursor:pointer;
-    align-items: center;
-    padding: 0px 20px;
 }
-
-
 
 .show{
     opacity: 1;
