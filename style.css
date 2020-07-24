@@ -27,7 +27,7 @@ body{
     display: flex;
     
     align-items: center;
-    color: #fff;
+    color: #242424;
     font-family: 'Staatliches',sans-serif;
     font-size: 1.5em;
     letter-spacing: 0.10em;
@@ -36,7 +36,7 @@ body{
 #navbar #subheader{
     font-size: 1em;
     font-family: 'Poppins',sans-serif;
-    color:#949494;
+    color: #B3B3B3;
 }
   
 
@@ -48,7 +48,7 @@ main{
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color:#2E2E2E;
+    background-color:#fff;
 }
 
 
@@ -73,7 +73,7 @@ background:url("Resources/Background.jpg");
     height: 250px;
     
     border-radius: 35px;
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0);
     overflow: hidden;
     transform: rotate(45deg);
     transition:all 100ms;
@@ -126,30 +126,31 @@ background:url("Resources/Background.jpg");
 
 
 #projectButton{
-    margin-top: -190px;
+    margin-bottom: 200px;
     background: #fff;
     color:#3F85B4 ;
     transition: all 600ms;
 }
+
 .moveProjectButton{
-    margin-bottom: 190px;
+    margin-bottom: 200px;
     background: #fff;
     color:#3F85B4;
     transition: all 400ms;
-    transform:translatey(-0px);
+    transform:translatey(-80px);
 }
 #practiceButton{
-    margin-top: 190px;
+    margin-top: 200px;
     background: #fff;
     color:#B49549 ; 
     transition: all 600ms;
 }
 .movePracticeButton{
-    margin-top: 190px;
+    margin-top: 200px;
     background: #fff;
     color:#B49549 ;
     transition: all 600ms;
-    transform:translatey(-285px); 
+    transform:translatey(-280px); 
 }
 
 
