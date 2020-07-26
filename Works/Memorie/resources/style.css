@@ -5,8 +5,13 @@ box-sizing: border-box;
 /*Global*/
  
 body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
     font-family: "Montserrat",sans-serif;
 }
+
 
 body,p,h1,h2,h3,h4,h5,h6{
     padding: 0px;
@@ -32,9 +37,20 @@ button:focus{
     display: flex;
     justify-content: space-between;
 }
-#secNavbar {
+
+#secNavbar{
     height: 50px;
     background: #303447;
+}
+
+.memoNavbar{
+    height: 70px;
+    display: flex;
+    background: #3D425C;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    z-index: 999;
 }
 
 #priNavbar #logo{
@@ -43,6 +59,7 @@ button:focus{
     letter-spacing: 0.1em;
     color: #FFFFFF;
 }
+
 #priNavbar #menuButton{
 /*    height: 100%;*/
 /*    width: 70px;*/
@@ -91,10 +108,12 @@ button:focus{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 0px 0px;
+    flex: 1;
 }
 
 .memo{
+    position: relative;
     display: flex;
     width: 40%;
     height: 185px;
@@ -102,11 +121,47 @@ button:focus{
     border-radius:0px;
     border:1px solid #C0C4DC;
     flex-direction: column;
-    margin: 10px;
-    transition: 200ms all;
+/*    margin: 10px;*/
+    transform-origin: 50% 50%;
     padding: 10px;
-    text-decoration: none;
     color: #000;
+    cursor: pointer;
+    margin-top: 30px;
+    top: 0px;
+}
+
+.expand{
+    cursor: default;
+    margin-top: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: expand 100ms linear forwards;
+    z-index: 9;
+    padding-top: 70px;
+}
+
+@keyframes expand{
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+.memoNavbar .back{
+    cursor: pointer;
+}
+
+.memoNavbar .menuButton{
+/*    height: 100%;*/
+/*    width: 70px;*/
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
     cursor: pointer;
 }
 
@@ -120,7 +175,7 @@ button:focus{
 }
 
 .memo .titleBar .title{
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .memo .content{
@@ -161,9 +216,17 @@ button:focus{
 
 
 
+.show{
+    opacity: 1;
+    transition: 300ms all;
+    display: flex;
+}
 
-
-
+.hide{
+    opacity: 0;
+    transition: 300ms all;
+    display: none;
+}
 
 
 
