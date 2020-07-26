@@ -1,0 +1,183 @@
+*{
+box-sizing: border-box;
+}
+ 
+/*Global*/
+ 
+body{
+    font-family: "Montserrat",sans-serif;
+}
+
+body,p,h1,h2,h3,h4,h5,h6{
+    padding: 0px;
+    margin: 0px;
+/*    color: #fff;*/
+}
+
+button:focus{
+    outline: 0px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#priNavbar {
+    height: 70px;
+    background: #3D425C;
+    display: flex;
+    justify-content: space-between;
+}
+#secNavbar {
+    height: 50px;
+    background: #303447;
+}
+
+#priNavbar #logo{
+    font-weight: 400;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+#priNavbar #menuButton{
+/*    height: 100%;*/
+/*    width: 70px;*/
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    cursor: pointer;
+    
+}
+
+#date{
+   font-weight: 300;
+    font-size: 0.9em;
+    color:#fff;
+}
+
+#toggleView{
+    height: 16px;
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#toggleView button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 14px;
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
+    cursor: pointer;
+}
+#panelsView{
+     
+}
+#cardsView{
+    
+}
+
+
+
+#screen{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.memo{
+    display: flex;
+    width: 40%;
+    height: 185px;
+    background-color: #fff;
+    border-radius:0px;
+    border:1px solid #C0C4DC;
+    flex-direction: column;
+    margin: 10px;
+    transition: 200ms all;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.memo .titleBar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+/*    background-color: aqua;*/
+}
+
+.memo .titleBar .title{
+    font-weight: 600;
+}
+
+.memo .content{
+    font-weight: 300;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+/*    line-height: 1em;*/
+}
+/*
+.expand{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+*/
+
+#screen #newMemo {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 80px;
+    right: 50px;
+    border-radius: 50%;
+    background: #3D425C;
+    border: 0px;
+    box-shadow: 0px 0px 50px 0px rgba(61,66,92,0.2); 
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 600px){
+
+}
+
+/*Desktop*/
+@media all and (min-width: 900px) {
+    body {
+    }
+}
+
+
+
+
+
