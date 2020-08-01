@@ -135,7 +135,7 @@ background:url("Resources/Background.jpg");
     background: #fff;
     color:#3F85B4;
     transition: all 400ms;
-    transform:translatey(-80px);
+    transform:translatey(-190px);
 }
 #practiceButton{
     margin-top: 200px;
@@ -175,7 +175,7 @@ background:url("Resources/Background.jpg");
 }
 
 
-#wave{
+.practiceTab #wave{
     top: 0px;
     left: 0px;
     width: 100%;
@@ -199,7 +199,7 @@ background:url("Resources/Background.jpg");
     z-index: 1;
 }
 
-#tabHalf{
+.practiceTab #tabHalf{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,14 +263,38 @@ background:url("Resources/Background.jpg");
     display: flex;
     visibility:hidden;
     background-color: #57AEE8;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     width: 100%;
     flex-direction: column;
 }
 .projectTab #wave{
-     border-radius: 0px 0px 0px 150px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+/*    box-shadow:0px 0px 10px 0px rgba(0,0,0,0.5);*/
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+}
+.projectTab #wave{
+     border-radius: 0px 0px 0px 100px;
+}
+.projectTab #tabHalf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    
 }
 .projectTab .subButton{
     position: relative;
