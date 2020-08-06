@@ -32,27 +32,19 @@ button:focus{
 }
 
 #priNavbar {
+    display: flex;
     height: 70px;
     background: hsl(230, 20%, 30%);
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-    display: flex;
-    background: #3D425C;
     justify-content: space-between;
     align-items: center;
-/*    padding: 0px 20px;*/
     z-index: 999;
     padding: 0px 0px 0px 20px;
 }
-
 #secNavbar{
     height: 50px;
     background: hsl(230, 19%, 23%);
     padding: 0px 20px;
 }
-
-
 
 #priNavbar #logo{
     font-weight: 400;
@@ -60,15 +52,17 @@ button:focus{
     letter-spacing: 0.1em;
     color: #FFFFFF;
 }
-
 #priNavbar #menuButton{
     height: 100%;
     width: 70px;
     background-color: transparent;
     border: 0px;
     padding: 0px;
-    cursor: pointer;
-    
+    cursor: pointer; 
+    transition: 400ms all;
+}
+#priNavbar #menuButton:hover{
+    background-color:hsl(230, 19%, 23%);
 }
 
 #date{
@@ -85,7 +79,7 @@ button:focus{
     align-items: center;
 }
 
-#toggleView button {
+#toggleView button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,8 +96,6 @@ button:focus{
 #cardsView{
     
 }
-
-
 
 #screen{
     position: relative;
@@ -148,36 +140,12 @@ button:focus{
     cursor: pointer;
     top: 0px;
     box-shadow:0px 0px 5px hsla(230, 19%, 23%,0.3); 
-    transition: 300ms all;
+    transition: 400ms all;
 }
 .memo:hover{
     transform: scale(1.03);
     box-shadow: 0px 0px 7px hsla(230, 19%, 23%,0.1)
 }
-.expand{
-    cursor: default;
-    margin-top: 0px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    animation: expand 100ms linear forwards;
-    z-index: 9;
-    padding-top: 70px;
-}
-
-@keyframes expand{
-    100%{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
-
-
-
-
-
 .memo .titleBar{
     height: 40px;
     width: 100%;
@@ -187,11 +155,9 @@ button:focus{
     font-size: 1em;
 /*    background-color: aqua;*/
 }
-
 .memo .titleBar .title{
     font-weight: 400;
 }
-
 .memo .content{
     font-weight: 300;
     display: flex;
@@ -232,7 +198,6 @@ button:focus{
 
 /*footer*/
 
-
 #footer{
     display: flex;
     position: relative;
@@ -252,40 +217,81 @@ button:focus{
 
 /*Open Memo CSS*/
 
-.memoNavbar .back{
+#memoNavbar{
+    height: 70px;
+    background: hsl(230, 20%, 30%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    z-index: 999;
+    padding: 0px;
+}
+#memoNavbar .back{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 70px;
     cursor: pointer;
 }
-.memoNavbar .menuButton{
-/*    height: 100%;*/
-/*    width: 70px;*/
+#memoNavbar .menuButton{
+    height: 100%;
+    width: 70px;
     background-color: transparent;
     border: 0px;
     padding: 0px;
-    cursor: pointer;
+    cursor: pointer;  
 }
+
+#screen-Memo1{
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    padding: 20px; 
+}
+
+#titleBar-Memo1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+#title-Memo1{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+#content-Memo1{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+
+
 
 
 
 /*Javascript*/
 
-
 .show{
     opacity: 1;
-    transition: 300ms all;
+    transition: 400ms all;
     display: flex;
 }
 .hide{
     opacity: 0;
-    transition: 300ms all;
+    transition: 400ms all;
     display: none;
 }
+
+
 
 
 
 @media all and (min-width: 600px){
 
 }
-
 /*Desktop*/
 @media all and (min-width: 900px) {
     body {

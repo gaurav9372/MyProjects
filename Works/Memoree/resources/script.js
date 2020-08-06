@@ -1,5 +1,7 @@
 $(document).ready(function(){
    
+    $("#date").html(function(){
+        
     var longDate = new Date();
     var yearM = longDate.getFullYear();
     var monthM = longDate.getMonth();
@@ -14,7 +16,13 @@ $(document).ready(function(){
     var currentMonth = monthsM[monthM];
     var currentDay = daysM[dayM];
     
-    $("#date").html(currentDate+" "+currentMonth+" , "+currentDay);
+    return (currentDate+" "+currentMonth+" , "+currentDay);
+    
+    });
+    
+    
+    
+    
 //$('.memo').click(function(){
 //    
 //    
