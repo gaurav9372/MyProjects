@@ -13,7 +13,7 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-
+ 
 #modal{
     display: flex;
     position: fixed;
@@ -87,14 +87,20 @@ input{
 input:focus{
     outline: 0px;
 }
+button:focus{
+    outline: 0px;
+}
+button:active{
+    background-color: #63b116;
+}
 button{
     width: 100px;
-    height: 2em;
+    height: 50px;
     margin: 30px 0px 0px;
     align-self: center;
     border: 0px;
     border-radius: 4px;
-    background-color: chartreuse
+    background-color: chartreuse;
 }
 
 

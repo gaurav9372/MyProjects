@@ -1,5 +1,7 @@
 $(document).ready(function(){
-   
+ 
+$("#error").hide();     
+    
 var rows = 0;
 var cols = 0;
 var time = 0;
@@ -8,17 +10,17 @@ var rows = $('#rows').val();
 var cols = $('#cols').val();
 var time = $('#time').val();
     
-$("#error").hide();     
+    
 
     
 $('#runButton').on('click',function(){
-    
+     
 var rows = $('#rows').val();
 var cols = $('#cols').val();
 var time = $('#time').val();
     
-if(rows==0){
-    $("#error").show();
+if(rows==0||cols==0|time==0){
+$("#error").show();
 //    alert("enter value");
 }else{
     
@@ -46,9 +48,9 @@ $('body').append("<div class='block'></div>");
 $('.block').width($bWidth);
 $('.block').height($bHeight);
     
-$('.block').each(function(index){
+$('.block').hide().each(function(index){
     
-$(this).hide().fadeIn(index*time);
+$(this).delay(time*index).fadeIn(time);
 
 });
 
