@@ -1,26 +1,44 @@
+/*Global*/
+
+
+/*
+color1: hsl(230, 20%, 30%) 
+color2: hsl(230, 19%, 23%)
+color3: hsl(151, 100%, 49%)
+color3: #43E798
+*/
+
 *{
 box-sizing: border-box;
 }
- 
-/*Global*/
- 
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    font-family: "Montserrat",sans-serif;
-}
-
 
 body,p,h1,h2,h3,h4,h5,h6{
     padding: 0px;
     margin: 0px;
-/*    color: #fff;*/
 } 
-
 button:focus{
     outline: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Montserrat",sans-serif;
+    background-color: hsl(230, 20%, 30%);
+}
+
+#screen{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    width: 100%;
+    grid-template-columns: 40% 40%;
+    grid-template-rows:250px 250px;
+
+    place-items:center;
+    place-content:space-evenly;
+    
+    background-color:  hsl(230, 20%, 30%)
 }
 
 .navbar {
@@ -30,11 +48,10 @@ button:focus{
     align-items: center;
     
 }
-
 #priNavbar {
     display: flex;
     height: 70px;
-    background: hsl(230, 20%, 30%);
+    background-color: hsl(230, 20%, 30%);
     justify-content: space-between;
     align-items: center;
     z-index: 999;
@@ -50,7 +67,7 @@ button:focus{
     font-weight: 400;
     font-size: 2em;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: #fff;
 }
 #priNavbar #menuButton{
     height: 100%;
@@ -62,16 +79,15 @@ button:focus{
     transition: 400ms all;
 }
 #priNavbar #menuButton:hover{
-    background-color:hsl(230, 19%, 23%);
+    background-color:hsl(230, 19%, 39%);
 }
 
-#date{
+#secNavbar #date{
    font-weight: 300;
     font-size: 0.9em;
     color:#fff;
 }
-
-#toggleView{
+#secNavbar #toggleView{
     height: 16px;
     width: 45px;
     display: flex;
@@ -90,37 +106,11 @@ button:focus{
     padding: 0px;
     cursor: pointer;
 }
-#panelsView{
+#toggleView #panelsView{
      
 }
-#cardsView{
+#toggleView #cardsView{
     
-}
-
-#screen{
-    position: relative;
-    display: grid;
-    width: 100%;
-    min-height: 480px;
-/*    height: 100%;*/
-    
-    grid-template-columns: 40% 40%;
-    grid-template-rows:240px 240px;
-
-/*
-    justify-items:center;
-    align-items:center;
-*/
-    
-    place-items:center;
-    
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    
-    place-content:space-evenly;
-    
-    background-color: #f5f5f5;
-/*    background-color: red;*/
 }
 
 .memo{
@@ -129,16 +119,13 @@ button:focus{
     width: 100%;
     height: 200px;
     background-color: #fff;
-    border-radius:3px;
+    border-radius:8px;
     border:0px ;
     flex-direction: column;
-/*    margin: 10px;*/
-    transform-origin: 50% 50%;
     text-decoration: none;
     padding: 10px;
     color: #000;
     cursor: pointer;
-    top: 0px;
     box-shadow:0px 0px 5px hsla(230, 19%, 23%,0.3); 
     transition: 400ms all;
 }
@@ -178,17 +165,17 @@ button:focus{
 }
 */
 
-#screen #newMemo {
+#screen #newMemo{
     position: fixed;
     width: 60px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 120px;
+    bottom: 80px;
     right: 50px;
     border-radius: 50%;
-    background: #43E798;
+    background: hsl(151, 100%, 49%);
     border: 0px;
     box-shadow: 0px 0px 50px 0px rgba(61,66,92,0.2); 
     cursor: pointer;
@@ -196,29 +183,12 @@ button:focus{
 }
 
 
-/*footer*/
-
-#footer{
-    display: flex;
-    position: relative;
-    bottom: 0px;
-    height: 100px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color: #303447;
-}
-
-
-
-
-
 
 /*Open Memo CSS*/
 
 #memoNavbar{
     height: 70px;
+    position: fixed;
     background: hsl(230, 20%, 30%);
     display: flex;
     justify-content: space-between;
@@ -235,6 +205,10 @@ button:focus{
     width: 70px;
     cursor: pointer;
 }
+#memoNavbar .back:hover{
+   background-color:hsl(230, 19%, 39%); 
+}
+
 #memoNavbar .menuButton{
     height: 100%;
     width: 70px;
@@ -244,11 +218,17 @@ button:focus{
     cursor: pointer;  
 }
 
+#memoNavbar .menuButton:hover{
+background-color:hsl(230, 19%, 39%);
+}
+
 #screen-Memo1{
+    padding: 70px 20px 20px 20px; 
     display: flex;
     flex-direction: column;
-    min-height: 480px;
-    padding: 20px; 
+    min-height: 500px;
+    height: 100vh;
+    background-color: #fff; 
 }
 
 #titleBar-Memo1{
@@ -269,9 +249,6 @@ button:focus{
 
 
 
-
-
-
 /*Javascript*/
 
 .show{
@@ -287,8 +264,6 @@ button:focus{
 
 
 
-
-
 @media all and (min-width: 600px){
 
 }
@@ -297,8 +272,3 @@ button:focus{
     body {
     }
 }
-
-
-
-
-
