@@ -1,45 +1,10 @@
-/*Global*/
-
-
-/*
-color1: hsl(230, 20%, 30%) 
-color2: hsl(230, 19%, 23%)
-color3: hsl(151, 100%, 49%)
-color3: #43E798
-*/
-
-*{
-box-sizing: border-box;
-}
-
-body,p,h1,h2,h3,h4,h5,h6{
-    padding: 0px;
-    margin: 0px;
-} 
-button:focus{
-    outline: 0px;
-}
 body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-family: "Montserrat",sans-serif;
-    background-color: hsl(230, 20%, 30%);
+    background-color: var(--pcolor);
 }
 
-#screen{
-    position: relative;
-    display: grid;
-    min-height: 500px;
-    width: 100%;
-    grid-template-columns: 40% 40%;
-    grid-template-rows:200px 200px;
-
-    place-items:center;
-    place-content:space-evenly;
-    
-    background-color:  hsl(230, 20%, 30%)
-}
 
 .navbar {
     display: flex;
@@ -51,7 +16,7 @@ body{
 #priNavbar {
     display: flex;
     height: 70px;
-    background-color: hsl(230, 20%, 30%);
+    background-color: var(--pcolor);
     justify-content: space-between;
     align-items: center;
     z-index: 999;
@@ -59,7 +24,7 @@ body{
 }
 #secNavbar{
     height: 50px;
-    background: hsl(230, 19%, 23%);
+    background: var(--pcolordark);
     padding: 0px 20px;
 }
 
@@ -79,7 +44,7 @@ body{
     transition: 400ms all;
 }
 #priNavbar #menuButton:hover{
-    background-color:hsl(230, 19%, 39%);
+    background-color:hsl(249, 100%, 66%);
 }
 
 #secNavbar #date{
@@ -113,6 +78,22 @@ body{
     
 }
 
+
+#screen{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    width: 100%;
+    grid-template-columns: 40% 40%;
+    grid-template-rows:200px 200px;
+
+    place-items:center;
+    place-content:space-evenly;
+    
+    background-color:  var(--pcolor);
+/*        background-color: #fff;*/
+
+}
 .memo{
     position: relative;
     display: flex;
@@ -128,7 +109,9 @@ body{
     cursor: pointer;
     box-shadow:0px 0px 5px hsla(230, 19%, 23%,0.3); 
     transition: 400ms all;
+    background-color:#fff;
 }
+
 .memo:hover{
     transform: scale(1.03);
     box-shadow: 0px 0px 7px hsla(230, 19%, 23%,0.1)
@@ -140,10 +123,11 @@ body{
     justify-content: flex-start;
     align-items: center;
     font-size: 1em;
-/*    background-color: aqua;*/
+/*    background-color: var(--pcolor);*/
 }
 .memo .titleBar .title{
     font-weight: 400;
+/*    color: var(--pcolor);*/
 }
 .memo .content{
     font-weight: 300;
@@ -156,98 +140,26 @@ body{
     font-size: 0.85em;
 /*    line-height: 1em;*/
 }
-/*
-.expand{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-}
-*/
 
 #screen #newMemo{
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 80px;
+    bottom: 70px;
     right: 50px;
     border-radius: 50%;
-    background: hsl(151, 100%, 49%);
+    background: var(--scolor);
     border: 0px;
     box-shadow: 0px 0px 50px 0px rgba(61,66,92,0.2); 
     cursor: pointer;
     z-index: 999;
 }
-
-
-
-/*Open Memo CSS*/
-
-#memoNavbar{
-    height: 70px;
-    position: fixed;
-    background: hsl(230, 20%, 30%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    z-index: 999;
-    padding: 0px;
+#screen #newMemo:hover{
+    transform: scale(1.05);
 }
-#memoNavbar .back{
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 70px;
-    cursor: pointer;
-}
-#memoNavbar .back:hover{
-   background-color:hsl(230, 19%, 39%); 
-}
-
-#memoNavbar .menuButton{
-    height: 100%;
-    width: 70px;
-    background-color: transparent;
-    border: 0px;
-    padding: 0px;
-    cursor: pointer;  
-}
-
-#memoNavbar .menuButton:hover{
-background-color:hsl(230, 19%, 39%);
-}
-
-#screen-Memo1{
-    padding: 70px 20px 20px 20px; 
-    display: flex;
-    flex-direction: column;
-    min-height: 500px;
-    height: 100vh;
-    background-color: #fff; 
-}
-
-#titleBar-Memo1{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    
-}
-#title-Memo1{
-    font-size: 1.5em;
-    font-weight: 400;
-}
-#content-Memo1{
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-}
-
-
 
 /*Javascript*/
 
@@ -261,8 +173,6 @@ background-color:hsl(230, 19%, 39%);
     transition: 400ms all;
     display: none;
 }
-
-
 
 @media all and (min-width: 600px){
 

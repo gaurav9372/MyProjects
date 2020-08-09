@@ -1,0 +1,20 @@
+/*Global*/
+:root{
+    --pcolor:hsl(249, 80%, 55%);
+    --pcolordark:hsl(249, 75%, 40%);
+    --scolor:hsl(295, 100%, 52%);
+}
+
+*{
+box-sizing: border-box;
+}
+
+body,p,h1,h2,h3,h4,h5,h6{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat",sans-serif;
+} 
+
+button:focus{
+    outline: 0px;
+}
