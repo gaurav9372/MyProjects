@@ -6,70 +6,77 @@
     
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     
-    <link href="https://fonts.googleapis.com/css2?
-    family=Montserrat:wght@300;400;600
-    &display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin
+    &family=Sniglet&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" type="text/css" href="resources/base.css">
+    <link rel="stylesheet" type="text/css" href="resources/signup.css">
     
-    
-    
-    <link rel="stylesheet" type="text/css" href="resources/style.css">
-    
-    <title>Memoree</title>
+    <title>Signup - Memoree</title>
 </head>
-
+ 
 <body>  
-<header>
-    <nav class="navbar" id="priNavbar">
-        <p id="logo">Memoree</p>
-        <button id="menuButton">
-            <img src="resources/Icons/menu.svg">
-        </button>
-    </nav>
+    <header>
+        <div id="logo">
+            <p>Memoree</p>
+        </div>
+    </header>
     
-    <div class="navbar" id="secNavbar">
-    
-        <div id="date">
-            
+    <form class="f_container">
+        
+        <div id="heading">
+            <p>Create your account</p>
         </div>
         
-        <div id="toggleView">
-            <button id="panelsView">
-                <img src="resources/Icons/panel.svg">
-            </button>
-            <button id="cardsView">
-                <img src="resources/Icons/card.svg">
-            </button>
-        </div>
-        
-    </div>
-</header>
-    
-<main id="screen">
-        <a href="memos/memo.html" class="memo" id="memo1">
+        <div class="row">
             
-            
-            <div class="titleBar">
-                <p class="title">Title</p>
-            </div>
-            
-            <div class="content">
-        This is just an example , sahadj askdasx 
-wa,smd ass xalwld s;alwpd 
-mawkw sldaw dslda wald a jjd iai aisiia ai d i  jasai aiwm aoos aijdmas awod c aiw dsoa soaw asds  dowdnda  sdiaw dkasda sd awi dsdwonadj.
-                </div>
-        </a>
-        
-        <a class="memo" id="memo2"></a>
-        <a class="memo" id="memo2"></a>
-        
-        <button id="newMemo">
-        <img src="resources/Icons/add.svg">
-        </button>
-    </main>
-    
+        <label for="fullName">Full Name</label>	
 
+        <input type="text" class="f_textbox" id="fullName" name="fullName" maxlength="15" required>	
+            
+        </div>
+        
+        <div class="row">
+             
+        <label for="email">Email</label>
+        
+        <input class="f_textbox"  id="email" type="email" required>
+            
+        </div>
+        
+        <div class="row">
+            
+            
+        <label for="password">	
+            Password	
+            </label>	
+
+            <input class="f_textbox"  id="password" type="password" minlength="6" maxlength="15" required>    
+            
+        </div>
+        
+        <div class="row">
+        
+            <label for="passwordConfirm">	
+            Confirm password	
+            </label>	
+
+            <input class="f_textbox" id="passwordConfirm" type="password" minlength="6" maxlength="15" required>
+            
     
+        </div>
+        
+        <div id="extraRow">
+            <input type="checkbox">
+            <p>Accept terms and rules</p>
+        </div>
+        
+        <div id="buttonCont">
+            <input type="submit" value="Confirm">
+        </div>
+    
+    </form>
+
 
     
 <script src="resources/jquery-3.5.1.min.js"></script>

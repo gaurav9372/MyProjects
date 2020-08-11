@@ -29,9 +29,8 @@ body{
 }
 
 #priNavbar #logo{
-    font-weight: 400;
-    font-size: 2em;
-    letter-spacing: 0.1em;
+    font-size: 35px;
+    font-family: 'Sniglet',cursive; 
     color: #fff;
 }
 #priNavbar #menuButton{
@@ -48,8 +47,8 @@ body{
 }
 
 #secNavbar #date{
-   font-weight: 300;
-    font-size: 0.9em;
+   font-family: 'cabin',sans-serif;
+    font-size: 1em;
     color:#fff;
 }
 #secNavbar #toggleView{
@@ -110,6 +109,8 @@ body{
     box-shadow:0px 0px 5px hsla(230, 19%, 23%,0.3); 
     transition: 400ms all;
     background-color:#fff;
+    
+    
 }
 
 .memo:hover{
@@ -117,34 +118,33 @@ body{
     box-shadow: 0px 0px 7px hsla(230, 19%, 23%,0.1)
 }
 .memo .titleBar{
-    height: 40px;
+    height: 2.4em;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1em;
-/*    background-color: var(--pcolor);*/
+
 }
 .memo .titleBar .title{
-    font-weight: 400;
-/*    color: var(--pcolor);*/
+    font-size: 1.2em;
+    font-family: 'Sniglet',cursive; 
 }
 .memo .content{
-    font-weight: 300;
     display: flex;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
     justify-content: center;
     align-items: flex-start;
-    font-size: 0.85em;
-/*    line-height: 1em;*/
+    font-size: 0.9em;
+    font-family: 'cabin',sans-serif;
+    letter-spacing: 0.5px;
 }
 
 #screen #newMemo{
     position: fixed;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,16 +163,7 @@ body{
 
 /*Javascript*/
 
-.show{
-    opacity: 1;
-    transition: 400ms all;
-    display: flex;
-}
-.hide{
-    opacity: 0;
-    transition: 400ms all;
-    display: none;
-}
+
 
 @media all and (min-width: 600px){
 
