@@ -9,6 +9,10 @@ body{
     background-color: var(--pcolor);
 }
 
+body,p,h1,h2,h3,h4,h5,h6{
+font-family: 'Cabin', sans-serif;
+} 
+
 #background{
     position: absolute;
     top: 0px;
