@@ -49,6 +49,7 @@ background-color:#F7F7F7;
 #title-Memo1{
     font-size: 2em;
     font-family: 'Sniglet',cursive; 
+    color: var(--pcolor);
 
 }
 #content-Memo1{
@@ -56,7 +57,6 @@ background-color:#F7F7F7;
     flex: 1;
     justify-content: flex-start;
     font-size: 1em;
-    font-family: 'cabin',sans-serif;
 }
 
 

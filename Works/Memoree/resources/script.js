@@ -35,7 +35,7 @@ $('input').blur(function(){
 });
     
       
-//   Nav Menu
+// Nav Menu
     
 //$("#menu").hide();    
 $("#menuButton").click(function(){

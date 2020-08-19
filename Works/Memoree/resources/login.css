@@ -112,7 +112,6 @@ body{
     padding: 0px 0.4em;
     border: 1px solid var(--pcolor);
     border-radius: 2px;
-    font-family: "cabin",sans-serif;
     background-color: #fff;
 }
 
@@ -126,7 +125,6 @@ form label{
     font-size: 0.9em;
     padding: 0px 0.4em;
     background-color: transparent;
-    font-family: "cabin",sans-serif;
     align-items: center;
     display: flex;
     margin-top: 0em;
