@@ -2,7 +2,7 @@
     height: 70px;
     width: 100%;
     position: fixed;
-    background: var(--pcolor);
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
     cursor: pointer;
 }
 #memoNavbar .back:hover{
-   background-color:hsl(249, 100%, 66%);
+   background-color:#F7F7F7;
 }
 #memoNavbar .menuButton{
     height: 100%;
@@ -30,7 +30,7 @@
     cursor: pointer;  
 }
 #memoNavbar .menuButton:hover{
-background-color:hsl(249, 100%, 66%);
+background-color:#F7F7F7;
 }
 #screen-Memo1{
     padding: 70px 20px 20px 20px; 
@@ -61,7 +61,7 @@ background-color:hsl(249, 100%, 66%);
 
 
 
-
+ 
 @media all and (min-width: 600px){
 
 }

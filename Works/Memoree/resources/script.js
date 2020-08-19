@@ -1,6 +1,6 @@
 $(document).ready(function(){
    
-    $("#date").html(function(){
+$("#date").html(function(){
         
     var longDate = new Date();
     var yearM = longDate.getFullYear();
@@ -34,21 +34,15 @@ $('input').blur(function(){
   }
 });
     
+      
+//   Nav Menu
     
+//$("#menu").hide();    
+$("#menuButton").click(function(){
     
-//$('.memo').click(function(){
-//    
-//    
-//$("#priNavbar").hide();
-//$("#secNavbar").hide();
-//$("#newMemo").hide();
-//    
-//$(this).addClass("expand");
-//    
-//$(".memoNavbar").removeClass("hide").addClass("show"); 
-//
-//    
+    $("#menu").slideToggle();
     
+});
  
 });
     
