@@ -11,7 +11,7 @@ body{
 
 body,p,h1,h2,h3,h4,h5,h6{
 font-family: 'Cabin', sans-serif;
-} 
+}
 
 #background{
     position: absolute;
@@ -69,7 +69,7 @@ font-family: 'Cabin', sans-serif;
     height: 1em;
     font-size: 1em;
     color: #fff;
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 
@@ -98,7 +98,7 @@ font-family: 'Cabin', sans-serif;
     border: 0px solid var(--pcolor);
     border-radius: 2px;
     background-color: #F5f5f5;
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 .f_textbox:focus{
@@ -117,7 +117,7 @@ form label{
     height: 100%;
     z-index: 2;
     transition: all 300ms ease;
-    font-family: 'Cabin', sans-serif;
+    
 }
 .focused{
     font-size: 0.7em;
@@ -147,7 +147,7 @@ form label{
 }
 #extraRow p{
     margin-left: 5px;
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 #buttonCont{
@@ -170,7 +170,7 @@ form label{
     font-size: 0.9em;
     letter-spacing: 1px;
     border-radius: 2px;
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 #buttonCont input:hover{
@@ -186,14 +186,14 @@ form label{
     width: 100%;
     color: #F6F6F6;
     font-size: 1em;
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 #foot_text a{
     color: #fff;
     margin-left: 0.41em;
     font-weight: bold;
-    font-family: 'Cabin', sans-serif;
+    
     text-decoration: none;
 }
 

@@ -11,7 +11,7 @@ body{
  
 body,p,h1,h2,h3,h4,h5,h6{
 font-family: 'Cabin', sans-serif;
-} 
+}
 /*
 #cover{
     position: absolute;
@@ -92,7 +92,7 @@ font-family: 'Cabin', sans-serif;
     height: 2.6em;
     font-size: 1.3em;
     color: var(--pcolor);
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 
@@ -117,7 +117,7 @@ font-family: 'Cabin', sans-serif;
     border: 1px solid var(--pcolor);
     border-radius: 2px;
     background-color: #fff;
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 .f_textbox:focus{
@@ -132,7 +132,7 @@ form label{
     background-color: transparent;
     align-items: center;
     display: flex;
-    font-family: 'Cabin', sans-serif;
+    
     margin-top: 0em;
     margin-left: 0em;
     height: 100%;
@@ -175,7 +175,7 @@ form label{
     font-size: 0.9em;
     letter-spacing: 1px;
     border-radius: 2px;
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 #buttonCont input:hover{
@@ -191,11 +191,11 @@ form label{
     width: 100%;
     color: #404040;
     font-size: 1em;
-    font-family: 'Cabin', sans-serif;
+    
 }
 
 #foot_text a{
-    font-family: 'Cabin', sans-serif;
+    
     color: #000;
     margin-left: 0.41em;
     font-weight: bold;
