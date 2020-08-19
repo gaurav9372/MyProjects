@@ -33,6 +33,7 @@ body,p,h1,h2,h3,h4,h5,h6{
     height: 50px;
     background: var(--pcolor);
     padding: 0px 20px;
+    font-family: 'Cabin', sans-serif;
 }
 
 
@@ -57,6 +58,7 @@ body,p,h1,h2,h3,h4,h5,h6{
 #secNavbar #date{
     font-size: 1em;
     color:#fff;
+    font-family: 'Cabin', sans-serif;
 }
 #secNavbar #toggleView{
     height: 16px;
@@ -145,6 +147,7 @@ body,p,h1,h2,h3,h4,h5,h6{
     align-items: flex-start;
     font-size: 0.9em;
     letter-spacing: 0.5px;
+    font-family: 'Cabin', sans-serif;
 }
 
 #screen #newMemo{
